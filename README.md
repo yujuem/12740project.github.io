@@ -208,5 +208,5 @@ while True:
 ![](circuit.png)
 Figure A-1: Circuit for the Experiment. 
 
-<video src="IMG_7205.mp4" width="320" height="200" controls preload></video>
+https://drive.google.com/open?id=120xqXe2j1_IoTqi5W9EoympXFJU3DEwN
 Video A-1: Simulation Experiment on the Sensors 
