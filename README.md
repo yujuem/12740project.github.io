@@ -1,4 +1,4 @@
-## Project Progress Report(Team AD)
+## Project Progress Report
  
 ## 1. Current Progress
 
@@ -9,16 +9,24 @@ As it was presented at Team AD’s project proposal presentation, Team AD has de
 ### 1-2: Research on the Specifications of Sensors
 
 In order to successfully fulfill the objective of creating the hand-based control, Team AD thought of several sensors that can be potentially used. Team AD thought Photosensitive Light Sensor (LM393),  Infrared Motion Sensor (Hc Sr501), and Accelerometer  (MPU-6050) as the potential sensors for the project. Below shows the specification of each sensor. 
+
 Photosensitive Light Sensor (LM393) 
-Sensing the Light Intensity Binary Output (“HIGH” or “LOW”) 
-Adjustable Sensitivity 
+
+-Sensing the Light Intensity Binary Output (“HIGH” or “LOW”) 
+
+-Adjustable Sensitivity 
+
 Infrared Motion Sensor (Hc Sr501) 
-Sensing the Temperature Binary Output (“Motion Detected” or “No Motion Detected”) 
-Range: 3m - 7m 
+
+-Sensing the Temperature Binary Output (“Motion Detected” or “No Motion Detected”) 
+
+-Range: 3m - 7m 
+
 Accelerometer (MPU-6050) 
-Three-axis gyroscope
-Three-axis accelerometer 
-Three Output (X- Y- Z-) for each output. 
+
+-Three-axis gyroscope + hree-axis accelerometer 
+
+-Three Output (X- Y- Z-) for each output 
 
 ### 1-3: Programming Languages
 
@@ -35,6 +43,8 @@ The motion sensor provides a binary output (No Motion/Motion Detected) and has a
 ### 1-5: Main project idea 
  
 After testing the sensors, Team AD decided to create the hand-motion based control with the use of light sensors only. 
+
+
  
 ## 2. Problems Encountered
  
