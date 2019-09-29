@@ -73,6 +73,10 @@ Secondly, we need to develop an algorithm that could condition the output (data 
 Thirdly, we need to simultaneously work on the hardware and develop a proper set-up incorporating all the sensors, wires, mount, and the Raspberry pi. We would ensure that the influence of electric, magnetic or any other ambient noise is minimized. Additionally, we will finalize the detailed arrangement of sensors, for example, the distance to detect stimuli, sampling rate, a threshold of simulation etc.
 Fourthly, we need to develop a GUI that could provide a seamless interaction between the user and the powerpoint slides. We are planning to use the filtered data and pass it on to the command prompt to alter the slides. Additionally, we will develop our knowledge about the Python programming language, Linux OS, and VIM text editor during the process of implementing these objectives.
 
+![](State_machine.png) 
+Figure 1: Finite State Machine.
+
+
 ## Appendix A:Source Code
 
 ```markdown
@@ -200,3 +204,6 @@ while True:
    previous_state2 = current_state2
 
 ```
+
+![](circuit.png)
+Figure A-1: Circuit for the Experiment. 
