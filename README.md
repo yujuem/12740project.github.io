@@ -42,9 +42,10 @@ GesPress is the system that would control the computer application with the moti
 
 ![LDR](images/image6.png) 
 Figure 1: Finite State Machine.
-### 3.2.Sensor Used
-### 3.3.Signal Conditioning and Processing
-### 3.4.Code Description
+
+![LDR](images/image7.png) 
+Figure 2: The variation of resistance of LDR
+
 
 
 
