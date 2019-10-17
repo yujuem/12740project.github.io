@@ -53,6 +53,9 @@ Figure 3: Voltage Divider Network
 ![](images/image9.png) 
 Figure 4: Description of Photosensitive Light Sensor Module
 
+![](images/image8.png) 
+Figure 5: MCP3008(Berges and Chen 2019).
+
 
 
 
