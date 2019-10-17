@@ -35,7 +35,8 @@ GesPress is the system that would control the computer application with the moti
 [Project Experiments]()
 
 [Video Link](https://www.youtube.com/watch?v=Bn2jMuWJl88&feature=youtu.be)
-[OpenChirp Lind](https://openchirp.io/home/device/5da233d1466cc60c381e0c83)
+
+[OpenChirp Link](https://openchirp.io/home/device/5da233d1466cc60c381e0c83)
 
 
 
