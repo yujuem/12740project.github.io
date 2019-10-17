@@ -20,7 +20,8 @@ By the end of the project, Team AD is going to achieve:
 4. Expanding the real-world application of hand motion reader -- be able to control the keyboard to control laptop under the construction read from hand motion. More specifically, the GesPress can control some basic operations like moving forward, backward and pause, when playing video or doing a presentation based on the hand motion detected.
 5. Creating a stable and flexible environment for the hardware -- making a box to make sure that the effect of hand motion on the sensor won't vary with the environment. 
 
-
+### Methodology
+###
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
