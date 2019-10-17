@@ -4,7 +4,7 @@
 
 **Yuneil Yeo, Yaqi Fan, Yujue Mao, Chirag Sachdeva, Rhea Upadhyay**
 
-[![Watch the video](https://img.youtube.com/vi/Bn2jMuWJl88/maxresdefault.jpg)](https://www.youtube.com/watch?v=Bn2jMuWJl88&feature=youtu.be)
+[![Watch the video](https://img.youtube.com/vi/Bn2jMuWJl88/maxresdefault.jpg](https://www.youtube.com/watch?v=Bn2jMuWJl88&feature=youtu.be)
 
 ## 1 Introduction
 
@@ -27,19 +27,20 @@ To control the presentation, professors make the hand available for pressing but
 ### 1.3 Our Works
 
 GesPress is the system that would control the computer application with the motion of the hand. GesPress is consisted of the software part (Python code) and the hardware part (including sensors, A/D convertor and Raspberry Pi). Hardware part would detect the presence of the hand and collect corresponding data. While software part would perform different reactions based on the signal detected from hand motion. For now, GesPress is able to control presentation slides and music players, including local player and online portals like YouTube. 
+**Our Design**
+**OpenChrip**
 
-[Project Progress](https://github.com/yujuem/12740project.github.io/blob/master/Project_progress.md)
+[Project Progress Report](https://github.com/yujuem/12740project.github.io/blob/master/Project_progress.md)
 
-[Preject Experiments]()
+[Project Experiments]()
 
 [Video Link](https://www.youtube.com/watch?v=Bn2jMuWJl88&feature=youtu.be)
 
 
 
-
-### 3.Methodology
-### 3.1.
-
+### 2 Methodology
+### 2.1 
+### 2.2 Sensor used
 ![](images/image6.png) 
 Figure 1: LDR.
 
@@ -63,7 +64,7 @@ Figure 6: ADC Block Diagram
 Figure 6: Sample Output
 
 
-### 4.Experiments and Results
+### 3.Experiments and Results
 
 **Experiment 1: Experiments with One Sensor**
 
@@ -105,7 +106,7 @@ To meet these requirements, the box consists of two compartments that can be eas
 
 
 
-### 5.Discussion
+### 4.Discussion
 
 **What we gain from the project?**
 
@@ -114,3 +115,5 @@ We implemented the hand movement control of slides and music player by using lig
 **What can we do in the future?**
 
 For now, the device still has some places can be improved. (1) Firstly, certain intervals are required for each movement. The sensor needs a certain period of time to initialize once it fails to detect a movement or just finish the previous detection, which sometimes results in a lack of smooth operation. (2) Secondly, the device only contains two light sensors, so we can’t enable more complex movement control. With two sensors, we could detect five types of movement at most (left-to-right, right-to-left, left-dark, right-dark, both dark). If more sensors are included in the device, we is able to explore more complex movements. However, the extraction and combination of signals will also become more difficult.
+
+### 5.Reference
