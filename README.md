@@ -2,7 +2,7 @@
 
 GesPress is the system that would control the computer application with the motion of the hand. GesPress is consisted of the software part (Python code) and the hardware part (including sensors, A/D convertor and Raspberry Pi). Hardware part would detect the presence of the hand and collect corresponding data. While software part would perform different reactions based on the signal detected from hand motion. For now, GesPress is able to control presentation slides and music players, including local player and online portals like YouTube. 
 
-[Project Progress]:https://yujuem/12740project.github.io/Project_progress.md
+[Project Progress](https://yujuem/12740project.github.io/Project_progress.md)
 
 
 ### Motivation
