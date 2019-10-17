@@ -1,35 +1,50 @@
-## Introduction
+# Hand based Control
+
+**Group AD**
+**Yuneil Yeo, Yaqi Fan, Yujue Mao, Chirag Sachdeva, Rhea Upadhyay**
+
+## 1 Introduction
+
+### 1.1 Motivation
+To control the presentation, professors make the hand available for pressing buttons, touchpad, or remote device. Team AD thought of a touchless interface composed of Raspberry Pi and sensors for hand-free presentation control. The world has been revolving around the touchless interface today and creating hand-motion control for presentations during classes was just a minuscule part of the bigger idea. This study has focused the energies on solving real-time issues. GesPress can potentially be a part of the automated infrastructure systems and can improve the lifestyles of users. Therefore, the device can contribute to the ongoing research on cutting edge technologies.
+
 
 GesPress is the system that would control the computer application with the motion of the hand. GesPress is consisted of the software part (Python code) and the hardware part (including sensors, A/D convertor and Raspberry Pi). Hardware part would detect the presence of the hand and collect corresponding data. While software part would perform different reactions based on the signal detected from hand motion. For now, GesPress is able to control presentation slides and music players, including local player and online portals like YouTube. 
 
 [Project Progress](https://github.com/yujuem/12740project.github.io/blob/master/Project_progress.md)
 
-### Motivation
-To control the presentation, professors make the hand available for pressing buttons, touchpad, or remote device. Team AD thought of a touchless interface composed of Raspberry Pi and sensors for hand-free presentation control. The world has been revolving around the touchless interface today and creating hand-motion control for presentations during classes was just a minuscule part of the bigger idea.
-
-This study has focused the energies on solving real-time issues. GesPress can potentially be a part of the automated infrastructure systems and can improve the lifestyles of users. Therefore, the device can contribute to the ongoing research on cutting edge technologies.
-
-
-### Goals
-
-By the end of the project, Team AD is going to achieve:
-
-- Designing a model to unscramble hand motions into non electrical signals -- defining the time and sequence of hand presence.
-
-- Transferring the nonelectrical signals into electronic signals through Analog to Digital Converters (ADC) -- light signals to voltage signals.
-
-- Processing the digital data properly -- eliminating noise, adhering to a basic standard of data quality, including the objectivity, utility, and integrity of the signals.
-
-- Expanding the real-world application of hand motion reader -- be able to control the keyboard to control laptop under the construction read from hand motion. More specifically, the GesPress can control some basic operations like moving forward, backward and pause, when playing video or doing a presentation based on the hand motion detected.
-
-- Creating a stable and flexible environment for the hardware -- making a box to make sure that the effect of hand motion on the sensor won't vary with the environment. 
-
-### Methodology
 
 
 
+### 1.2 Goals
 
-### Experiments and Results
+- Designing a model to unscramble hand motions into non-electrical signals.
+
+  defining the time and sequence of hand presence.
+
+- Transferring the non-electrical signals into electronic signals through Analog to Digital Converters (ADC).
+  
+  light signals to voltage signals
+
+- Processing the digital data properly. 
+
+  eliminating noise, adhering to a basic standard of data quality, including the objectivity, utility, and integrity of the signals.
+
+- Expanding the real-world application of hand motion reader
+  be able to control the keyboard to control laptop under the construction read from hand motion. More specifically, the GesPress can control some basic operations like moving forward, backward and pause, when playing video or doing a presentation based on the hand motion detected.
+
+- Creating a stable and flexible environment for the hardware.
+  making a box to make sure that the effect of hand motion on the sensor won't vary with the environment. 
+
+### 3.Methodology
+### 3.1.
+### 3.2.Sensor Used
+### 3.3.Signal Conditioning and Processing
+### 3.4.Code Description
+
+
+
+### 4.Experiments and Results
 
 **Experiment 1: Experiments with One Sensor**
 
@@ -71,7 +86,7 @@ To meet these requirements, the box consists of two compartments that can be eas
 
 
 
-### Discussion
+### 5.Discussion
 
 **What we gain from the project?**
 
@@ -80,34 +95,3 @@ We implemented the hand movement control of slides and music player by using lig
 **What can we do in the future?**
 
 For now, the device still has some places can be improved. (1) Firstly, certain intervals are required for each movement. The sensor needs a certain period of time to initialize once it fails to detect a movement or just finish the previous detection, which sometimes results in a lack of smooth operation. (2) Secondly, the device only contains two light sensors, so we can’t enable more complex movement control. With two sensors, we could detect five types of movement at most (left-to-right, right-to-left, left-dark, right-dark, both dark). If more sensors are included in the device, we is able to explore more complex movements. However, the extraction and combination of signals will also become more difficult.
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown].
-[GitHub Flavored Markdown] = https://guides.github.com/features/mastering-markdown/
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/c-sachdeva/GesPress.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
