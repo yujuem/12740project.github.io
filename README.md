@@ -2,7 +2,8 @@
 
 GesPress is the system that would control the computer application with the motion of the hand. GesPress is consisted of the software part (Python code) and the hardware part (including sensors, A/D convertor and Raspberry Pi). Hardware part would detect the presence of the hand and collect corresponding data. While software part would perform different reactions based on the signal detected from hand motion. For now, GesPress is able to control presentation slides and music players, including local player and online portals like YouTube. 
 
-[Project Progress](https://yujuem/12740project.github.io/Project_progress.md).
+[Project Progress]
+[Project Progress]:https://yujuem/12740project.github.io/Project_progress.md
 
 
 ### Motivation
@@ -14,11 +15,16 @@ This study has focused the energies on solving real-time issues. GesPress can po
 ### Goals
 
 By the end of the project, Team AD is going to achieve:
-1. Designing a model to unscramble hand motions into non electrical signals -- defining the time and sequence of hand presence.
-2. Transferring the nonelectrical signals into electronic signals through Analog to Digital Converters (ADC) -- light signals to voltage signals.
-3. Processing the digital data properly -- eliminating noise, adhering to a basic standard of data quality, including the objectivity, utility, and integrity of the signals.
-4. Expanding the real-world application of hand motion reader -- be able to control the keyboard to control laptop under the construction read from hand motion. More specifically, the GesPress can control some basic operations like moving forward, backward and pause, when playing video or doing a presentation based on the hand motion detected.
-5. Creating a stable and flexible environment for the hardware -- making a box to make sure that the effect of hand motion on the sensor won't vary with the environment. 
+
+- Designing a model to unscramble hand motions into non electrical signals -- defining the time and sequence of hand presence.
+
+- Transferring the nonelectrical signals into electronic signals through Analog to Digital Converters (ADC) -- light signals to voltage signals.
+
+- Processing the digital data properly -- eliminating noise, adhering to a basic standard of data quality, including the objectivity, utility, and integrity of the signals.
+
+- Expanding the real-world application of hand motion reader -- be able to control the keyboard to control laptop under the construction read from hand motion. More specifically, the GesPress can control some basic operations like moving forward, backward and pause, when playing video or doing a presentation based on the hand motion detected.
+
+- Creating a stable and flexible environment for the hardware -- making a box to make sure that the effect of hand motion on the sensor won't vary with the environment. 
 
 ### Methodology
 
