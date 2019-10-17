@@ -40,10 +40,10 @@ GesPress is the system that would control the computer application with the moti
 ### 3.Methodology
 ### 3.1.
 
-[](images/image6.png) 
+![](images/image6.png) 
 Figure 1: LDR.
 
-.[](images/image7.png) 
+![](images/image7.png) 
 Figure 2: The variation of resistance of LDR.
 
 
