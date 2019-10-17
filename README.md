@@ -56,8 +56,11 @@ Experiment is conducted to control the music. The system also detects the long p
 The requirements for the box are:
 
   - It should be compact. It should be easy to disintegrate and assemble back
+  
   - Provide structural support to the circuit 
+  
   - Non conducting and thermally insulating 
+  
   - Have opening for the sensor
 
 To meet these requirements, the box consists of two compartments that can be easily disintegrated. The top compartment houses the entire circuit and the sensors are attached to the bottom part of the top panel. This ensures protection from ambient environment. Moreover, the box is made up of wood to prevent thermal and electric conduction.
