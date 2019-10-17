@@ -30,12 +30,16 @@ GesPress is the system that would control the computer application with the moti
 **Our Design**
 **OpenChrip**
 
+![](images/openchirp.png) 
+Figure 2. the Openchirp Interface
+
 [Project Progress Report](https://github.com/yujuem/12740project.github.io/blob/master/Project_progress.md)
 
 [Project Experiments]()
 
 [Video Link](https://www.youtube.com/watch?v=Bn2jMuWJl88&feature=youtu.be)
 
+[OpenChirp](https://openchirp.io/home/device/5da233d1466cc60c381e0c83)
 
 
 ### 2 Methodology
