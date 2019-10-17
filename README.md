@@ -36,13 +36,28 @@ GesPress is the system that would control the computer application with the moti
 
 [Video Link](https://www.youtube.com/watch?v=Bn2jMuWJl88&feature=youtu.be)
 
-[OpenChirp Link](https://openchirp.io/home/device/5da233d1466cc60c381e0c83)
-
 
 
 ### 2 Methodology
 ### 2.1 
 ### 2.2 Sensor used
+
+Photosensitive Light Sensor (LM393) works through the light dependent resistor (LDR). LDR is a semiconductor device that changes its electrical resistance depending on the presence of light, its resistance can reach several thousand Ohms in the dark, while only few hundreds of Ohms in the light. Below figure shows the variation of the resistance of LDR. 
+
+Figure 2 shows that the resistance of LDR increases when illumination (LUX) value is low. The increase in LUX value decreases the resistance of LDR. 
+
+Compared to other alternative light sensing technologies like Photodiode, Phototransistor, LDR has a lower sensitivity. However, it is more reliable for outdoor environment. It can be easily controlled by visible light, because of its similar spectral response curve to that of the human eye.
+
+Connecting LDR in series with a standard resistor could generate a voltage drop based on light intensity, and the circuit is called voltage divider network. Figure 3 shows the voltage divider network. 
+
+The specification of Photosensitive Light Sensor (LM393) is extracted as below,
+
+- Input Voltage: 3~5V
+
+- Output: Analog Voltage Form or Digital Switching Form
+
+- Sensitivity: Adjustable for visible light
+
 ![](images/image6.png) 
 Figure 1: LDR.
 
