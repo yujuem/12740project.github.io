@@ -14,12 +14,12 @@ GesPress is the system that would control the computer application with the moti
 
 [Project Progress](https://github.com/yujuem/12740project.github.io/blob/master/Project_progress.md)
 
-
+[Video Link](https://youtu.be/Bn2jMuWJl88)
 
 
 ### 1.2 Goals
 
-- Designing a model to unscramble hand motions into non-electrical signals.
+- To design a model to unscramble hand motions into non-electrical signals (define the time sequence).
 
   defining the time and sequence of hand presence.
 
@@ -35,9 +35,7 @@ GesPress is the system that would control the computer application with the moti
 
   be able to control the keyboard to control laptop under the construction read from hand motion. More specifically, the GesPress can control some basic operations like moving forward, backward and pause, when playing video or doing a presentation based on the hand motion detected.
 
-- Creating a stable and flexible environment for the hardware.
-
-  making a box to make sure that the effect of hand motion on the sensor won't vary with the environment. 
+- To create a stable and flexible environment for the sensors (make a box to avoid environmental interference).
 
 ### 3.Methodology
 ### 3.1.
