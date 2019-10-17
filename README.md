@@ -56,7 +56,11 @@ Figure 4: Description of Photosensitive Light Sensor Module
 ![](images/image8.png) 
 Figure 5: MCP3008(Berges and Chen 2019).
 
+![](images/image11.png) 
+Figure 6: ADC Block Diagram
 
+![](images/image13.png) 
+Figure 6: Sample Output
 
 
 ### 4.Experiments and Results
