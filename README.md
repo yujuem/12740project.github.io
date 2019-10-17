@@ -1,6 +1,7 @@
 # Hand based Control
 
 **Group AD**
+
 **Yuneil Yeo, Yaqi Fan, Yujue Mao, Chirag Sachdeva, Rhea Upadhyay**
 
 ## 1 Introduction
@@ -31,9 +32,11 @@ GesPress is the system that would control the computer application with the moti
   eliminating noise, adhering to a basic standard of data quality, including the objectivity, utility, and integrity of the signals.
 
 - Expanding the real-world application of hand motion reader
+
   be able to control the keyboard to control laptop under the construction read from hand motion. More specifically, the GesPress can control some basic operations like moving forward, backward and pause, when playing video or doing a presentation based on the hand motion detected.
 
 - Creating a stable and flexible environment for the hardware.
+
   making a box to make sure that the effect of hand motion on the sensor won't vary with the environment. 
 
 ### 3.Methodology
