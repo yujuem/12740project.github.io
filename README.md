@@ -26,9 +26,7 @@ GesPress is the system that would control the computer application with the moti
 
 - To porocess the digital data properly (eliminate noise, guarantee objectivity, utility, and integrity of the signals). 
 
-- To expand the real-world application (be able to control the keyboard).
-
-  be able to control the keyboard to control laptop under the construction read from hand motion. More specifically, the GesPress can control some basic operations like moving forward, backward and pause, when playing video or doing a presentation based on the hand motion detected.
+- To expand the real-world application (be able to control the keyboard, do some basic operations like moving forward, backward and pause based on the hand motion detected).
 
 - To create a stable and flexible environment for the sensors (make a box to avoid environmental interference).
 
