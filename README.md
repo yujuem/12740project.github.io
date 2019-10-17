@@ -30,6 +30,7 @@ GesPress is the system that would control the computer application with the moti
 
 [Project Progress](https://github.com/yujuem/12740project.github.io/blob/master/Project_progress.md)
 [Preject Experiments]()
+[Video Link](https://www.youtube.com/watch?v=Bn2jMuWJl88&feature=youtu.be)
 
 
 
