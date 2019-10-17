@@ -34,6 +34,9 @@ GesPress is the system that would control the computer application with the moti
 
 ### 3.Methodology
 ### 3.1.
+
+![LDR](images/image6.png) 
+Figure 1: Finite State Machine.
 ### 3.2.Sensor Used
 ### 3.3.Signal Conditioning and Processing
 ### 3.4.Code Description
