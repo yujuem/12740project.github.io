@@ -4,9 +4,7 @@
 
 **Yuneil Yeo, Yaqi Fan, Yujue Mao, Chirag Sachdeva, Rhea Upadhyay**
 
-<iframe id="ytplayer" type="text/html" width="640" height="360"
-  src="https://www.youtube.com/watch?v=Bn2jMuWJl88&feature=youtu.be"
-  frameborder="0"></iframe>
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://www.youtube.com/watch?v=Bn2jMuWJl88&feature=youtu.be)
 
 ## 1 Introduction
 
