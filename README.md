@@ -28,10 +28,16 @@ To control the presentation, professors make the hand available for pressing but
 
 GesPress is the system that would control the computer application with the motion of the hand. GesPress is consisted of the software part (Python code) and the hardware part (including sensors, A/D convertor and Raspberry Pi). Hardware part would detect the presence of the hand and collect corresponding data. While software part would perform different reactions based on the signal detected from hand motion. For now, GesPress is able to control presentation slides and music players, including local player and online portals like YouTube. 
 **Our Design**
+
 **OpenChrip**
+Figure 2 shows the interface of the OpenChirp for our data series.
 
 ![](images/openchirp.png) 
 Figure 2. the Openchirp Interface
+
+At first, A voltage jump in left sensor is detected and then a few seconds later it went back to normal while there was another voltage jump in right sensor. This implies there was a hand over the left sensor blocking the light first and in a few seconds it moved to the right one. Therefore, this part is a hand motion of left to right. Similarly, it is applied to the right part.
+
+
 
 [Project Progress Report](https://github.com/yujuem/12740project.github.io/blob/master/Project_progress.md)
 
