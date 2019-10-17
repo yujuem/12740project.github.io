@@ -14,24 +14,17 @@ GesPress is the system that would control the computer application with the moti
 
 [Project Progress](https://github.com/yujuem/12740project.github.io/blob/master/Project_progress.md)
 
-[Video Link](https://youtu.be/Bn2jMuWJl88)
-
+{% include https://youtu.be/Bn2jMuWJl88 id=page.youtubeId %}
 
 ### 1.2 Goals
 
-- To design a model to unscramble hand motions into non-electrical signals (define the time sequence).
+- To design a model to unscramble hand motions into non-electrical signals (define the time and sequence of the hand motion).
 
-  defining the time and sequence of hand presence.
+- To transfer the non-electrical signals into electronic signals through Analog to Digital Converters (ADC).
 
-- Transferring the non-electrical signals into electronic signals through Analog to Digital Converters (ADC).
-  
-  light signals to voltage signals
+- To porocess the digital data properly (eliminate noise, guarantee objectivity, utility, and integrity of the signals). 
 
-- Processing the digital data properly. 
-
-  eliminating noise, adhering to a basic standard of data quality, including the objectivity, utility, and integrity of the signals.
-
-- Expanding the real-world application of hand motion reader
+- To expand the real-world application (be able to control the keyboard).
 
   be able to control the keyboard to control laptop under the construction read from hand motion. More specifically, the GesPress can control some basic operations like moving forward, backward and pause, when playing video or doing a presentation based on the hand motion detected.
 
