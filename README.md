@@ -46,6 +46,13 @@ Figure 1: LDR.
 ![](images/image7.png) 
 Figure 2: The variation of resistance of LDR.
 
+![](images/image10.png) 
+Figure 3: Voltage Divider Network 
+
+
+![](images/image9.png) 
+Figure 4: Description of Photosensitive Light Sensor Module
+
 
 
 
