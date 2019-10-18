@@ -1,4 +1,4 @@
-# Final Report: Hand Based Control
+## Final Report: Hand Based Control
 
 **Group AD**
 
