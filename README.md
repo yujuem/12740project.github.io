@@ -93,7 +93,7 @@ Figure 6: Sample Output
 
 ### 3.Experiments and Results
 
-**Experiment 1: Experiments with One Sensor**
+**Experiment 1: Experiments with One Sensor** ![Experiment1](EXP1.pdf)
 
 Experiment is conducted to test the photosensitive light sensors in order to implement hand-gesture based control for the project. Initially the team tested only one sensor to check the analog output and the sensor sensitivity. This was done to make sure that the light sensors could successfully capture the hand gesture. One photosensitive light sensor was connected to the Raspberry Pi. On moving our hand above the sensor, the light detected by the sensor is reduced. This corresponded to a jump in the voltage. 
 
