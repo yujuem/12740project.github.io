@@ -49,27 +49,38 @@ At first, A voltage jump in left sensor is detected and then a few seconds later
 
 
 ### 2 Methodology
-### 2.1 
-### 2.2 Sensor used
 
-Photosensitive Light Sensor (LM393) works through the light dependent resistor (LDR). LDR is a semiconductor device that changes its electrical resistance depending on the presence of light, its resistance can reach several thousand Ohms in the dark, while only few hundreds of Ohms in the light. Below figure shows the variation of the resistance of LDR. 
+### 2.1 Phenomena of Interest
 
-Figure 2 shows that the resistance of LDR increases when illumination (LUX) value is low. The increase in LUX value decreases the resistance of LDR. 
+The concept behind the phenomena of interest for the project is to line the bridge between sensor measurement data and humane-characteristics on the basis of spatiotemporal proximity. The use of sensors in the project aids in using real-time data to manipulate analog outputs and channelize that into understanding user’s demands and following people-centric commands.
 
-Compared to other alternative light sensing technologies like Photodiode, Phototransistor, LDR has a lower sensitivity. However, it is more reliable for outdoor environment. It can be easily controlled by visible light, because of its similar spectral response curve to that of the human eye.
+### 2.2 Physical Principle
 
-Connecting LDR in series with a standard resistor could generate a voltage drop based on light intensity, and the circuit is called voltage divider network. Figure 3 shows the voltage divider network. 
+Sensors are devices that can convert non-electrical signals to electrical signals either directly or via a number of steps. The project can be devised using various sensors. The physical principles of the three kinds of sensors that can be used have been described below:
+Thermoelectric- Thermoelectric sensors work on the principle of direct conversion of temperature differences to analog electrical voltage and vice versa in the thermocouple. example: Temperature Sensors
+Piezoelectric- This effect is based on the measurement of changes in pressure, acceleration, strain or force due to vibration by converting them into electrical signals. example: Accelerometers
+Photosensitive- Light sensors sometimes use a component called a photodiode to measure illuminance. When beams of light strike a photodiode, they have a tendency to knock electrons loose, causing an electric current to flow. The brighter the light, the stronger the electric current. The current can then be measured to return the illuminance of the light ex: Light Sensors
+
+### 2.2 Sensors used
+
+![](images/image9.png) 
+Figure 4: Description of Photosensitive Light Sensor Module
+
+Photosensitive Light Sensor (LM393) works through the light dependent resistor (LDR). LDR is a semiconductor device that changes its electrical resistance depending on the presence of light, its resistance can reach several thousand Ohms in the dark, while only a few hundreds of Ohms in the light. According to Figure 4, when ambient light intensity does not reach the threshold value, the module DO port output high; when the ambient light intensity exceeds a set threshold, the D0 output low; digital outputs D0 can be directly connected with the microcontroller through the microcontroller to detect high and low, thereby detecting the light intensity changes in the environment. 
 
 The specification of Photosensitive Light Sensor (LM393) is extracted as below,
 
-- Input Voltage: 3~5V
+- Input Voltage: 3.3~5V
 
 - Output: Analog Voltage Form or Digital Switching Form
 
 - Sensitivity: Adjustable for visible light
 
-![](images/image6.png) 
-Figure 1: LDR.
+
+
+Connecting LDR in series with a standard resistor could generate a voltage drop based on light intensity, and the circuit is called voltage divider network. Figure 3 shows the voltage divider network. 
+
+
 
 ![](images/image7.png) 
 Figure 2: The variation of resistance of LDR.
@@ -78,8 +89,7 @@ Figure 2: The variation of resistance of LDR.
 Figure 3: Voltage Divider Network 
 
 
-![](images/image9.png) 
-Figure 4: Description of Photosensitive Light Sensor Module
+
 
 ![](images/image8.png) 
 Figure 5: MCP3008(Berges and Chen 2019).
@@ -93,31 +103,31 @@ Figure 6: Sample Output
 
 ### 3.Experiments and Results
 
-**Experiment 1: Experiments with One Sensor** <a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP1.pdf" target="_blank">Experiment 1</a>
+**Experiment 1: Experiments with One Sensor** ![Experiment1](EXP1.pdf)
 
 Experiment is conducted to test the photosensitive light sensors in order to implement hand-gesture based control for the project. Initially the team tested only one sensor to check the analog output and the sensor sensitivity. This was done to make sure that the light sensors could successfully capture the hand gesture. One photosensitive light sensor was connected to the Raspberry Pi. On moving our hand above the sensor, the light detected by the sensor is reduced. This corresponded to a jump in the voltage. 
 
-**Experiment 2: Experiments with Two Sensors** <a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP2.pdf" target="_blank">Experiment 2</a>
+**Experiment 2: Experiments with Two Sensors**![Experiment2](EXP2.pdf)
 
 To detect a hand motion (gesture), more than one sensor is required. After the first experiment, the team added another photosensitive light sensor to the circuit. Simultaneous readings from two sensors is used to detect hand motion from right to left or left to right direction. Additionally, the setup was enclosed in a box to reduce the influence of ambient lighting on the sensors and minimise noise from ambient atmosphere (vibrations, wind, heat etc.).
 
-**Experiment 3: Analog output I**![Experiment3]<a href="https://github.com/yujuem/12740project.github.io/blob/master/Exp3.pdf" target="_blank">Experiment 3</a> <a href="https://github.com/yujuem/12740project.github.io/blob/master/Code%20EXP%203.pdf">Code</a>
+**Experiment 3: Analog output I**![Experiment3](Exp3.pdf)
 
 Experiment is conducted to make the system to detect the hand motion successfully. Two light sensors, Raspberry Pi, A/D converter, and python code are used to create the system. The difference in the analog voltage output values between the initial value and measurement is appended to the list of sensor. List has fixed length of three. Hand motion is detected in the code by comparing the first and last value of both lists.The system is not detecting the hand motion properly, and the modification of the code is needed. 
 
-**Experiment 4: Analog output II**![Experiment4]<a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP4.pdf" target="_blank">Experiment 4</a><a href="https://github.com/yujuem/12740project.github.io/blob/master/Code%20EXP%204.pdf" target="_blank">Code</a>
+**Experiment 4: Analog output II**![Experiment4](EXP4.pdf)
 
 Experiment is conducted modify the code used in Experiment 3 to detect the hand motion successfully. Method and Procedure are similar to Experiment 3. Unlike Experiment 3, the list does not have fixed length but have maximum length defined by time.sleep value and maximum time of hand motion. The system detects the hand motion correctly except when the hand moves quickly. 
 
-**Experiment 5: Presentation Control**<a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP5.pdf" target="_blank">Experiment 5</a> <a href="https://github.com/yujuem/12740project.github.io/blob/master/Code%20EXP%205.pdf" target="_blank">Code</a>
+**Experiment 5: Presentation Control**![Experiment5](EXP5.pdf)
 
 Experiment is conducted to control the presentation with slightly modified code created in Experiment 4. Library pynput is imported to press and release the key for each hand motion. Left to right motion forwards the presentation while right to left motion backwards the presentation. Presentation slides are controlled with a hand motion successfully except when the hand moves quickly. 
 
-**Experiment 6: Music Control**<a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP6.pdf" target="_blank">Experiment 6</a><a href="hhttps://github.com/yujuem/12740project.github.io/blob/master/Code%20EXP%206.pdf" target="_blank">Code</a>
+**Experiment 6: Music Control**![Experiment6](EXP6.pdf)
 
 Experiment is conducted to control the music. The system also detects the long placement of hand on each sensor and both sensors. The long placement of hand on left sensor, right sensor, and both sensors make the system to forward the music, rewind the music, and resume/pause the music. Music is controlled with a hand motion successfully except when the hand moves quickly. 
 
-**Experiment 7: Construction of the Device Box**<a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP7.pdf" target="_blank">Experiment 7</a>(EXP7.pdf) 
+**Experiment 7: Construction of the Device Box**![Experiment7](EXP7.pdf)
 
 The requirements for the box are:
 
