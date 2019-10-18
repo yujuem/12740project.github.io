@@ -1,4 +1,4 @@
-# Hand based Control
+# Hand Based Control
 
 **Group AD**
 
