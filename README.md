@@ -12,7 +12,7 @@
 
 ## 1 Introduction
 
-GesPress is the system that would control the computer application with the motion of the hand. GesPress is consisted of the software part (Python code) and the hardware part (including sensors, A/D convertor and Raspberry Pi). Hardware part would detect the presence of the hand and collect corresponding data. While software part would perform different reactions based on the signal detected from hand motion. For now, GesPress is able to control presentation slides and music players, including local player and online portals like YouTube. 
+GesPress is the system that would control the computer application with the motion of the hand. GesPress consists of the software part (Python code) and the hardware part (including sensors, A/D converter and Raspberry Pi). The hardware part would detect the presence of the hand and collect corresponding data. While the software part would perform different reactions based on the signal detected from hand motion. For now, GesPress can control presentation slides and music players, including local players and online portals like YouTube. 
 
 ### 1.1 Motivation
 
@@ -25,7 +25,7 @@ To control the presentation, professors make the hand available for pressing but
 
 - To transfer the non-electrical signals into electronic signals through Analog to Digital Converters (ADC).
 
-- To porocess the digital data properly (eliminate noise, guarantee objectivity, utility, and integrity of the signals). 
+- To process the digital data properly (eliminate noise, guarantee objectivity, utility, and integrity of the signals). 
 
 - To expand the real-world application (be able to control the keyboard, do some basic operations like moving forward, backward and pause based on the hand motion detected).
 
@@ -37,22 +37,22 @@ To control the presentation, professors make the hand available for pressing but
 
 ### 2.1 Phenomena of Interest
 
-The concept behind the phenomena of interest for the project is to line the bridge between sensor measurement data and humane-characteristics on the basis of spatiotemporal proximity. The use of sensors in the project aids in using real-time data to manipulate analog outputs and channelize that into understanding user’s demands and following people-centric commands.
+The concept behind the phenomena of interest for the project is to line the bridge between sensor measurement data and humane-characteristics based on spatiotemporal proximity. The use of sensors in the project aids in using real-time data to manipulate analog outputs and channelize that into understanding user’s demands and following people-centric commands.
 
 ### 2.1.1 Physical Principle
 
-Sensors are devices that can convert non-electrical signals to electrical signals either directly or via a number of steps (Fraden 2010). The project can be devised using various sensors. The physical principles of the three kinds of sensors that can be used have been described below:
+Sensors are devices that can convert non-electrical signals to electrical signals either directly or via several steps (Fraden 2010). The project can be devised using various sensors. The physical principles of the three kinds of sensors that can be used have been described below:
 
 - Thermoelectric- Thermoelectric sensors work on the principle of direct conversion of temperature differences to analog electrical voltage and vice versa in the thermocouple. example: Temperature Sensors (Stuijk 2019).
-- Piezoelectric- This effect is based on the measurement of changes in pressure, acceleration , strain or force due to vibration by converting them into electrical signals. example: Accelerometers (Zheng et al 2019).
-- Photosensitive- Light sensors sometimes use a component called a photodiode to measure illuminance. When beams of light strike a photodiode, they have a tendency to knock electrons loose, causing an electric current to flow. The brighter the light, the stronger the electric current. The current can then be measured to return the illuminance of the light ex: Light Sensors (Wai Li 1984).
+- Piezoelectric- This effect is based on the measurement of changes in pressure, acceleration, strain or force due to vibration by converting them into electrical signals. example: Accelerometers (Zheng et al 2019).
+- Photosensitive- Light sensors sometimes use a component called a photodiode to measure illuminance. When beams of light strike a photodiode, they tend to knock electrons loose, causing an electric current to flow. The brighter the light, the stronger the electric current. The current can then be measured to return the illuminance of the light ex: Light Sensors (Wai Li 1984).
 
 
 ### 2.1.2 Static and Dynamic Behavior
 
 **Signal Characteristics:**
 
-- Frequency: For the project, the signal is not oscillating in terms of time. There is no change in output when the hand is not moved. Therefore, the frequency of the signal depends on the number of times the hand movements are detected at certain time.
+- Frequency: For the project, the signal is not oscillating in terms of time. There is no change in output when the hand is not moved. Therefore, the frequency of the signal depends on the number of times the hand movements are detected at a certain time.
 
 - Amplitude/Magnitude: Magnitude is the difference between the initial value and the measurement representing the hand presence. Amplitude is the maximum value of the magnitudes. 
 
@@ -76,9 +76,9 @@ Sensors are devices that can convert non-electrical signals to electrical signal
  
 **Sensor Characteristic - Dynamic Behavior:**
 
-- Frequency Response: It is the measure of output signal of a control system with respect to the changes due to the movement. The response is used to measure the dynamic response of a system. (Fraden 2010)                                
-- Phase Shift : Phase Shift should be low enough to have a stable voltage response.  If the phase shift is too high, it reduces the phase marginal value of system and can result in unstable system response. (Fraden 2010)  
-- Resonant frequency: It is the frequency at which sensors output signal increases considerably. The signals which behave linearly, first order systems do not resonate. (Fraden 2010). For the project, Resonant frequency differs with respect to the types of sensors.
+- Frequency Response: It is the measure of the output signal of a control system with respect to the changes due to the movement. The response is used to measure the dynamic response of a system. (Fraden 2010)                                
+- Phase Shift: Phase Shift should be low enough to have a stable voltage response.  If the phase shift is too high, it reduces the phase marginal value of the system and can result in unstable system response. (Fraden 2010)  
+- Resonant frequency: It is the frequency at which the sensors' output signal increases considerably. The signals which behave linearly, first-order systems do not resonate. (Fraden 2010). For the project, Resonant frequency differs with respect to the types of sensors.
 
 
 ### 2.2 Sensors used
@@ -87,7 +87,7 @@ Sensors are devices that can convert non-electrical signals to electrical signal
 
 Figure 1: Description of Photosensitive Light Sensor Module (MySensor 2019).
 
-Photosensitive Light Sensor (LM393) works through the light dependent resistor (LDR). LDR is a semiconductor device that changes its electrical resistance depending on the presence of light, its resistance can reach several thousand Ohms in the dark, while only a few hundreds of Ohms in the light (MySensor 2019). According to Figure 1, when ambient light intensity does not reach the threshold value, the module DO port output high; when the ambient light intensity exceeds a set threshold, the D0 output low; digital outputs D0 can be directly connected with the microcontroller through the microcontroller to detect high and low, thereby detecting the light intensity changes in the environment. 
+Photosensitive Light Sensor (LM393) works through the light-dependent resistor (LDR). LDR is a semiconductor device that changes its electrical resistance depending on the presence of light, its resistance can reach several thousand Ohms in the dark, while only a few hundreds of Ohms in the light (MySensor 2019). According to Figure 1, when ambient light intensity does not reach the threshold value, the module DO port output high; when the ambient light intensity exceeds a set threshold, the D0 output low; digital outputs D0 can be directly connected with the microcontroller through the microcontroller to detect high and low, thereby detecting the light intensity changes in the environment. 
 
 The specification of Photosensitive Light Sensor (LM393) is extracted as below,
 
@@ -95,7 +95,7 @@ The specification of Photosensitive Light Sensor (LM393) is extracted as below,
 - Output: Analog Voltage Form or Digital Switching Form  (MySensor 2019).
 - Sensitivity: Adjustable for visible light  (MySensor 2019).
 
-Connecting LDR in series with a standard resistor could generate a voltage drop based on light intensity, and the circuit is called voltage divider network. Figure 3 shows the voltage divider network. 
+Connecting LDR in series with a standard resistor could generate a voltage drop based on the light intensity, and the circuit is called voltage divider network. Figure 3 shows the voltage divider network. 
 
 ![](images/image10.png) 
 
@@ -113,7 +113,7 @@ As shown in Figure 2, the amount of voltage drop across R2 is determined by the 
 
 Figure 3: Transfer Function (Electronics Tutorials 2019).
 
-Graph on Figure 3 shows that the resistance of LDR increases when illumination (LUX) value is low.  The increase in LUX value decreases the resistance of LDR. (Nagadevi 2018).
+The graph in Figure 3 shows that the resistance of LDR increases when illumination (LUX) value is low.  The increase in LUX value decreases the resistance of LDR. (Nagadevi 2018).
 
 - Span: The range of input values for light sensors is dynamic starting from the value representing the initial state to the value representing the change in light intensity. Since LDR is used on LM393, the range of light levels selected for LDR is researched. For ADC, the selected range of light levels is 200 LUX to 30 LUX (Kruger 2017). 
 
@@ -123,12 +123,12 @@ Graph on Figure 3 shows that the resistance of LDR increases when illumination (
 
 ### 2.3 Signal Conditioning and Processing
 
-Signal Processing is the process of acquiring data with enhanced accuracy, it is performed with the help signal conditioner. This conditioner helps to provide the user with accurate and precise measurements and enhanced machine control. For this project, we have used A/D converter as a signal conditioner. The signal conditioner has been designed to perform several functions listed below:
+Signal Processing is the process of acquiring data with enhanced accuracy, it is performed with the help signal conditioner. This conditioner helps to provide the user with accurate and precise measurements and enhanced machine control. For this project, we have used the A/D converter as a signal conditioner. The signal conditioner has been designed to perform several functions listed below:
  
-- Signal Conversion: The main function of signal conditioners is to convert the raw signal from sensors to high level electrical signals. If several sensors are being used in a device, the conditioners need to be connected to each other as well (Das A 2019).
+- Signal Conversion: The main function of signal conditioners is to convert the raw signal from sensors to high-level electrical signals. If several sensors are being used in a device, the conditioners need to be connected as well (Das A 2019).
 - Linearisation: If the output-stimulus relation for a sensor signal is not linear, conditioners can perform functions to convert the outputs in a linear range of values. This will provide a smooth curve for output signals and increase accuracy (Das A 2019).
 - Amplifying: Two methods can be employed to amplify the signals, increasing the measured input values of signals or by increasing the signal to noise ratio. Different types of instrumentation sensors and isolation sensors can be used with high impedance characteristics to amplify the measured output values (Das A 2019).
-- Filtering: The final signal output values can be filtered to only include a spectrum of frequencies for analysis. Conditioners can be made from with active or passive components or digital algorithms. The passive filters use capacitors or resistors with the maximum signal gain. The active filters ise operational amplifiers or transistors. The advanced signal conditioners use digital filters without any requirement of hardware (Das A 2019).
+- Filtering: The final signal output values can be filtered to only include a spectrum of frequencies for analysis. Conditioners can be made from active or passive components or digital algorithms. The passive filters use capacitors or resistors with the maximum signal gain. The active filters use operational amplifiers or transistors. The advanced signal conditioners use digital filters without any requirement of hardware (Das A 2019).
 
                
 This project makes use of an Analog to Digital Converter(MCP3008) for signal processing and conditioning with 8 channels and 10 Bits precision. The below figure shows the numbering of the pins on MCP3008 looks. 
@@ -143,7 +143,7 @@ The working of ADC has been explained below:
 
 Figure 5: ADC Block Diagram (Wai Li 1984).
 
-The block diagram describes the broad working of an ADC. It performs two functions, sampling and holding, quantisation and processing of the digital output. The quantisation process can either be performed by analog integration, digital counter and successive approximation or direct conversion in Flash types (Wai Li 1984). Further, the digital output data is served to the CPU or gets directly stored in memory. In the output of S/H, certain voltage is present. A numerical value is assigned to the voltage in correspondence with its amplitude (Wai Li 1984). It is in the limited range of possible values given by power of 2 i.e 2^n (28 = 256, 210=1024 etc). Once closest value is assigned it is encoded in the form of binary numbers generated by the quantizer, that are represented by ‘n’ bits (Wai Li 1984). Post this the digital signal is again converted to analog output for the user to interpret the frequency response and record sensor measurements. The choice of integrating the ADC with MCU chip or another stand alone Integrated chip is subject to change as the interface demands (Wai Li 1984).     
+The block diagram describes the broad working of an ADC. It performs two functions, sampling and holding, quantization and processing of the digital output. The quantization process can either be performed by analog integration, digital counter, and successive approximation or direct conversion in Flash types (Wai Li 1984). Further, the digital output data is served to the CPU or gets directly stored in memory. In the output of S/H, a certain voltage is present. A numerical value is assigned to the voltage in correspondence with its amplitude (Wai Li 1984). It is in the limited range of possible values given by the power of 2 i.e 2^n (28 = 256, 210=1024, etc). Once the closest value is assigned it is encoded in the form of binary numbers generated by the quantizer, that are represented by ‘n’ bits (Wai Li 1984). Post this the digital signal is again converted to an analog output for the user to interpret the frequency response and record sensor measurements. The choice of integrating the ADC with MCU chip or another stand-alone Integrated chip is subject to change as the interface demands (Wai Li 1984).     
 
 ### 2.3.1 Code Description
 
@@ -159,27 +159,27 @@ The overall list can give the information of the time length and specific time o
 
 **Experiment 1: Experiments with One Sensor** <a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP1.pdf" target="_blank">Experiment 1</a>
 
-Experiment is conducted to test the photosensitive light sensors in order to implement hand-gesture based control for the project. Initially the team tested only one sensor to check the analog output and the sensor sensitivity. This was done to make sure that the light sensors could successfully capture the hand gesture. One photosensitive light sensor was connected to the Raspberry Pi. On moving our hand above the sensor, the light detected by the sensor is reduced. This corresponded to a jump in the voltage. 
+The experiment is conducted to test the photosensitive light sensors to implement hand-gesture based control for the project. Initially, the team tested only one sensor to check the analog output and the sensor sensitivity. This was done to make sure that the light sensors could successfully capture the hand gesture. One photosensitive light sensor was connected to the Raspberry Pi. On moving our hand above the sensor, the light detected by the sensor is reduced. This corresponded to a jump in the voltage. 
 
 **Experiment 2: Experiments with Two Sensors** <a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP2.pdf" target="_blank">Experiment 2</a>
 
-To detect a hand motion (gesture), more than one sensor is required. After the first experiment, the team added another photosensitive light sensor to the circuit. Simultaneous readings from two sensors is used to detect hand motion from right to left or left to right direction. Additionally, the setup was enclosed in a box to reduce the influence of ambient lighting on the sensors and minimise noise from ambient atmosphere (vibrations, wind, heat etc.).
+To detect a hand motion (gesture), more than one sensor is required. After the first experiment, the team added another photosensitive light sensor to the circuit. Simultaneous readings from two sensors are used to detect hand motion from right to left or left to the right direction. Additionally, the setup was enclosed in a box to reduce the influence of ambient lighting on the sensors and minimize noise from the ambient atmosphere (vibrations, wind, heat, etc.).
 
 **Experiment 3: Analog output I** <a href="https://github.com/yujuem/12740project.github.io/blob/master/Exp3.pdf" target="_blank">Experiment 3</a>  <a href="https://github.com/yujuem/12740project.github.io/blob/master/Code%20EXP%203.pdf">Code</a>
 
-Experiment is conducted to make the system to detect the hand motion successfully. Two light sensors, Raspberry Pi, A/D converter, and python code are used to create the system. The difference in the analog voltage output values between the initial value and measurement is appended to the list of sensor. List has fixed length of three. Hand motion is detected in the code by comparing the first and last value of both lists.The system is not detecting the hand motion properly, and the modification of the code is needed. 
+The experiment is conducted to make the system detect the hand motion successfully. Two light sensors, Raspberry Pi, A/D converter, and python code are used to create the system. The difference in the analog voltage output values between the initial value and measurement is appended to the list of the sensor. The list has a fixed length of three. Hand motion is detected in the code by comparing the first and last values of both lists. The system is not detecting the hand motion properly, and the modification of the code is needed. 
 
 **Experiment 4: Analog output II** <a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP4.pdf" target="_blank">Experiment 4</a>  <a href="https://github.com/yujuem/12740project.github.io/blob/master/Code%20EXP%204.pdf">Code</a>
 
-Experiment is conducted modify the code used in Experiment 3 to detect the hand motion successfully. Method and Procedure are similar to Experiment 3. Unlike Experiment 3, the list does not have fixed length but have maximum length defined by time.sleep value and maximum time of hand motion. The system detects the hand motion correctly except when the hand moves quickly. 
+The experiment is conducted to modify the code used in Experiment 3 to detect the hand motion successfully. Method and Procedure are similar to Experiment 3. Unlike Experiment 3, the list does not have fixed length but have a maximum length defined by time.sleep value and maximum time of hand motion. The system detects the hand motion correctly except when the hand moves quickly. 
 
 **Experiment 5: Presentation Control** <a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP5.pdf" target="_blank">Experiment 5</a>  <a href="https://github.com/yujuem/12740project.github.io/blob/master/Code%20EXP%205.pdf">Code</a>
 
-Experiment is conducted to control the presentation with slightly modified code created in Experiment 4. Library pynput is imported to press and release the key for each hand motion. Left to right motion forwards the presentation while right to left motion backwards the presentation. Presentation slides are controlled with a hand motion successfully except when the hand moves quickly. 
+The experiment is conducted to control the presentation with a slightly modified code created in Experiment 4. Library pynput is imported to press and release the key for each hand motion. Left to right motion forwards the presentation while the right to left motion moves the presentation slide back to the previous slide. Presentation slides are controlled with a hand motion successfully except when the hand moves quickly. 
 
 **Experiment 6: Music Control** <a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP6.pdf" target="_blank">Experiment 6</a>  <a href="https://github.com/yujuem/12740project.github.io/blob/master/Code%20EXP%206.pdf">Code</a>
 
-Experiment is conducted to control the music. The system also detects the long placement of hand on each sensor and both sensors. The long placement of hand on left sensor, right sensor, and both sensors make the system to forward the music, rewind the music, and resume/pause the music. Music is controlled with a hand motion successfully except when the hand moves quickly. 
+The experiment is conducted to control the music. The system also detects the long placement of the hand on each sensor and both sensors. The long placement of the hand on the left sensor, right sensor, and both sensors make the system to forward the music, rewind the music, and resume/pause the music. Music is controlled with a hand motion successfully except when the hand moves quickly. 
 
 **Experiment 7: Construction of the Device Box** <a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP7.pdf" target="_blank">Experiment 7</a>
 
@@ -190,13 +190,13 @@ The requirements for the box are:
   - Non conducting and thermally insulating 
   - Have opening for the sensor
 
-To meet these requirements, the box consists of two compartments that can be easily disintegrated. The top compartment houses the entire circuit and the sensors are attached to the bottom part of the top panel. This ensures protection from ambient environment. Moreover, the box is made up of wood to prevent thermal and electric conduction.
+To meet these requirements, the box consists of two compartments that can be easily disintegrated. The top compartment houses the entire circuit and the sensors are attached to the bottom part of the top panel. This ensures protection from the ambient environment. Moreover, the box is made up of wood to prevent thermal and electric conduction.
 
 
 **Design**
 
 ![](images/sensor.png) 
-Figure 6. the design of device
+Figure 6. the design of the device
 
 **OpenChrip**
 
@@ -205,18 +205,18 @@ Figure 7 shows the interface of the OpenChirp for our data series.
 ![](images/openchirp.png) 
 Figure 7. the Openchirp Interface
 
-At first, A voltage jump in left sensor is detected and then a few seconds later it went back to normal while there was another voltage jump in right sensor. This implies there was a hand over the left sensor blocking the light first and in a few seconds it moved to the right one. Therefore, this part is a hand motion of left to right. Similarly, it is applied to the right part.
+At first, A voltage jump in the left sensor is detected and then a few seconds later it went back to normal while there was another voltage jump in the right sensor. This implies there was a hand over the left sensor blocking the light first and in a few seconds, it moved to the right one. Therefore, this part is a hand motion of left to right. Similarly, it is applied to the right part.
 
 
 ### 4.Discussion
 
-**What we gain from the project?**
+**Lessons Learned**
 
-In this project, Team AD implemented the hand movement control of slides and music player by using light sensors, A/D converter, and Raspberry Pi. Team AD also uploaded our real-time data to the OpenChrip in order to create the IoT device. With the completion of the project, Team AD get a deeper understanding of (1) the principles of various sensors, (2) the circuits analysis, (3) Linux commands and Python programming, (4) A/D conversions and signal processing.
+In this project, Team AD implemented the hand movement control of slides and music player by using light sensors, A/D converter, and Raspberry Pi. Team AD also uploaded our real-time data to the OpenChrip to create the IoT device. With the completion of the project, Team AD get a deeper understanding of (1) the principles of various sensors, (2) the circuits analysis, (3) Linux commands and Python programming, (4) A/D conversions and signal processing.
 
-**What can we do in the future?**
+**Future Application**
 
-For now, the device still has some places can be improved. (1) Firstly, certain intervals are required for each movement. The sensor needs a certain period of time to initialize once it fails to detect a movement or just finish the previous detection, which sometimes results in a lack of smooth operation. (2) Secondly, the device only contains two light sensors, so we can’t enable more complex movement control. With two sensors, we could detect five types of movement at most (left-to-right, right-to-left, left-dark, right-dark, both dark). If more sensors are included in the device, we is able to explore more complex movements. However, the extraction and combination of signals will also become more difficult.
+For now, the device still has some places can be improved. (1) Firstly, certain intervals are required for each movement. The sensor needs a certain time to initialize once it fails to detect a movement or just finish the previous detection, which sometimes results in a lack of smooth operation. (2) Secondly, the device only contains two light sensors, so it can’t enable more complex motion control. With two sensors, it could detect five types of movement at most (left-to-right, right-to-left, left-dark, right-dark, both dark). If more sensors are included in the device, it can explore more complex movements. However, the extraction and combination of signals will also become more difficult.
 
 
 
