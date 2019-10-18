@@ -1,10 +1,10 @@
+**Final Report: Hand Based Control**
 
 **Group AD**
 
 **Yuneil Yeo, Yaqi Fan, Yujue Mao, Chirag Sachdeva, Rhea Upadhyay**
 
 [Project Video](https://www.youtube.com/watch?v=Bn2jMuWJl88&feature=youtu.be)
-<iframe src="https://www.youtube.com/watch?v=Bn2jMuWJl88&feature=youtu.be" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 [Project Progress Report](https://c-sachdeva.github.io/12740progress_report/)
 
