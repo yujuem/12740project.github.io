@@ -196,14 +196,14 @@ To meet these requirements, the box consists of two compartments that can be eas
 ### 3.1.Design
 
 ![](images/sensor.png) 
-Figure 6. the design of the device
+Figure 6. Design of the device
 
 ### 3.2.OpenChrip
 
 Figure 7 shows the interface of the OpenChirp for our data series.
 
 ![](images/openchirp.png) 
-Figure 7. the Openchirp Interface
+Figure 7. The Openchirp Interface
 
 At first, A voltage jump in the left sensor is detected and then a few seconds later it went back to normal while there was another voltage jump in the right sensor. This implies there was a hand over the left sensor blocking the light first and in a few seconds, it moved to the right one. Therefore, this part is a hand motion of left to right. Similarly, it is applied to the right part.
 
