@@ -118,6 +118,7 @@ The specification of Photosensitive Light Sensor (LM393) is extracted as below,
 Connecting LDR in series with a standard resistor could generate a voltage drop based on light intensity, and the circuit is called voltage divider network. Figure 3 shows the voltage divider network. 
 
 ![](images/image10.png) 
+
 Figure 3: Voltage Divider Network 
 
 As shown in Figure 2, the amount of voltage drop across R2 is determined by the resistance of LDR. The voltage present at the junction is determined by the formula shown in Figure 2.
@@ -127,6 +128,11 @@ As shown in Figure 2, the amount of voltage drop across R2 is determined by the 
 - Input: As the hand movement is detected by light sensors, the input value(i.e. light intensity) changes. The frequency of input signal changes as compared to the original light source. 
 
 - Transfer Function:  The relationship between the changes due to the input and the voltage output. For light sensors that this project uses, the transfer function can be defined by the following equation:
+
+![](images/bbb) 
+
+Figure 3: Voltage Divider Network 
+
 
 - Span: The range of input values for light sensors is dynamic starting from the value representing the initial state to the value representing the change in light intensity. Since LDR is used on LM393, the range of light levels selected for LDR is researched. For ADC, the selected range of light levels is 200 LUX to 30 LUX.
 
@@ -154,7 +160,7 @@ Figure 5: MCP3008(Berges and Chen 2019).
 
 The working of ADC has been explained below:
 
-![](images/image11.png) 
+![](images/aaa) 
 
 Figure 6: ADC Block Diagram
 
