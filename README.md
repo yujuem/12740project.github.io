@@ -111,19 +111,19 @@ Experiment is conducted to test the photosensitive light sensors in order to imp
 
 To detect a hand motion (gesture), more than one sensor is required. After the first experiment, the team added another photosensitive light sensor to the circuit. Simultaneous readings from two sensors is used to detect hand motion from right to left or left to right direction. Additionally, the setup was enclosed in a box to reduce the influence of ambient lighting on the sensors and minimise noise from ambient atmosphere (vibrations, wind, heat etc.).
 
-**Experiment 3: Analog output I**<a href="https://github.com/yujuem/12740project.github.io/blob/master/Exp3.pdf" target="_blank">Experiment 3</a>
+**Experiment 3: Analog output I** <a href="https://github.com/yujuem/12740project.github.io/blob/master/Exp3.pdf" target="_blank">Experiment 3</a>  <a href="https://github.com/yujuem/12740project.github.io/blob/master/Code%20EXP%203.pdf">Code</a>
 
 Experiment is conducted to make the system to detect the hand motion successfully. Two light sensors, Raspberry Pi, A/D converter, and python code are used to create the system. The difference in the analog voltage output values between the initial value and measurement is appended to the list of sensor. List has fixed length of three. Hand motion is detected in the code by comparing the first and last value of both lists.The system is not detecting the hand motion properly, and the modification of the code is needed. 
 
-**Experiment 4: Analog output II**<a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP4.pdf" target="_blank">Experiment 4</a>
+**Experiment 4: Analog output II**<a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP4.pdf" target="_blank">Experiment 4</a>  <a href="https://github.com/yujuem/12740project.github.io/blob/master/Code%20EXP%204.pdf">Code</a>
 
 Experiment is conducted modify the code used in Experiment 3 to detect the hand motion successfully. Method and Procedure are similar to Experiment 3. Unlike Experiment 3, the list does not have fixed length but have maximum length defined by time.sleep value and maximum time of hand motion. The system detects the hand motion correctly except when the hand moves quickly. 
 
-**Experiment 5: Presentation Control**<a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP5.pdf" target="_blank">Experiment 5</a>
+**Experiment 5: Presentation Control**<a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP5.pdf" target="_blank">Experiment 5</a>  <a href="https://github.com/yujuem/12740project.github.io/blob/master/Code%20EXP%205.pdf">Code</a>
 
 Experiment is conducted to control the presentation with slightly modified code created in Experiment 4. Library pynput is imported to press and release the key for each hand motion. Left to right motion forwards the presentation while right to left motion backwards the presentation. Presentation slides are controlled with a hand motion successfully except when the hand moves quickly. 
 
-**Experiment 6: Music Control**<a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP6.pdf" target="_blank">Experiment 6</a>
+**Experiment 6: Music Control**<a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP6.pdf" target="_blank">Experiment 6</a>  <a href="https://github.com/yujuem/12740project.github.io/blob/master/Code%20EXP%206.pdf">Code</a>
 
 Experiment is conducted to control the music. The system also detects the long placement of hand on each sensor and both sensors. The long placement of hand on left sensor, right sensor, and both sensors make the system to forward the music, rewind the music, and resume/pause the music. Music is controlled with a hand motion successfully except when the hand moves quickly. 
 
