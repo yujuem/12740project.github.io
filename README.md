@@ -4,15 +4,15 @@
 
 **Yuneil Yeo, Yaqi Fan, Yujue Mao, Chirag Sachdeva, Rhea Upadhyay**
 
-[Project Video](https://www.youtube.com/watch?v=Bn2jMuWJl88&feature=youtu.be)
+[Project Video](https://drive.google.com/open?id=1N207_5tJ0NcITNJCpVEyFiWjEd7EHGfH)
 
 [Project Progress Report](https://c-sachdeva.github.io/12740progress_report/)
-
-[Project Experiments]()
 
 [OpenChirp](https://openchirp.io/home/device/5da233d1466cc60c381e0c83)
 
 ## 1 Introduction
+
+GesPress is the system that would control the computer application with the motion of the hand. GesPress is consisted of the software part (Python code) and the hardware part (including sensors, A/D convertor and Raspberry Pi). Hardware part would detect the presence of the hand and collect corresponding data. While software part would perform different reactions based on the signal detected from hand motion. For now, GesPress is able to control presentation slides and music players, including local player and online portals like YouTube. 
 
 ### 1.1 Motivation
 
@@ -31,22 +31,6 @@ To control the presentation, professors make the hand available for pressing but
 
 - To create a stable and flexible environment for the sensors (make a box to avoid environmental interference).
 
-### 1.3 Our Works
-
-GesPress is the system that would control the computer application with the motion of the hand. GesPress is consisted of the software part (Python code) and the hardware part (including sensors, A/D convertor and Raspberry Pi). Hardware part would detect the presence of the hand and collect corresponding data. While software part would perform different reactions based on the signal detected from hand motion. For now, GesPress is able to control presentation slides and music players, including local player and online portals like YouTube. 
-
-**Our Design**
-
-![](images/sensor.png) 
-Figure 1. the design of device
-
-**OpenChrip**
-Figure 2 shows the interface of the OpenChirp for our data series.
-
-![](images/openchirp.png) 
-Figure 2. the Openchirp Interface
-
-At first, A voltage jump in left sensor is detected and then a few seconds later it went back to normal while there was another voltage jump in right sensor. This implies there was a hand over the left sensor blocking the light first and in a few seconds it moved to the right one. Therefore, this part is a hand motion of left to right. Similarly, it is applied to the right part.
 
 
 ### 2 Methodology
@@ -190,19 +174,19 @@ To detect a hand motion (gesture), more than one sensor is required. After the f
 
 Experiment is conducted to make the system to detect the hand motion successfully. Two light sensors, Raspberry Pi, A/D converter, and python code are used to create the system. The difference in the analog voltage output values between the initial value and measurement is appended to the list of sensor. List has fixed length of three. Hand motion is detected in the code by comparing the first and last value of both lists.The system is not detecting the hand motion properly, and the modification of the code is needed. 
 
-**Experiment 4: Analog output II**<a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP4.pdf" target="_blank">Experiment 4</a>  <a href="https://github.com/yujuem/12740project.github.io/blob/master/Code%20EXP%204.pdf">Code</a>
+**Experiment 4: Analog output II** <a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP4.pdf" target="_blank">Experiment 4</a>  <a href="https://github.com/yujuem/12740project.github.io/blob/master/Code%20EXP%204.pdf">Code</a>
 
 Experiment is conducted modify the code used in Experiment 3 to detect the hand motion successfully. Method and Procedure are similar to Experiment 3. Unlike Experiment 3, the list does not have fixed length but have maximum length defined by time.sleep value and maximum time of hand motion. The system detects the hand motion correctly except when the hand moves quickly. 
 
-**Experiment 5: Presentation Control**<a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP5.pdf" target="_blank">Experiment 5</a>  <a href="https://github.com/yujuem/12740project.github.io/blob/master/Code%20EXP%205.pdf">Code</a>
+**Experiment 5: Presentation Control** <a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP5.pdf" target="_blank">Experiment 5</a>  <a href="https://github.com/yujuem/12740project.github.io/blob/master/Code%20EXP%205.pdf">Code</a>
 
 Experiment is conducted to control the presentation with slightly modified code created in Experiment 4. Library pynput is imported to press and release the key for each hand motion. Left to right motion forwards the presentation while right to left motion backwards the presentation. Presentation slides are controlled with a hand motion successfully except when the hand moves quickly. 
 
-**Experiment 6: Music Control**<a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP6.pdf" target="_blank">Experiment 6</a>  <a href="https://github.com/yujuem/12740project.github.io/blob/master/Code%20EXP%206.pdf">Code</a>
+**Experiment 6: Music Control** <a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP6.pdf" target="_blank">Experiment 6</a>  <a href="https://github.com/yujuem/12740project.github.io/blob/master/Code%20EXP%206.pdf">Code</a>
 
 Experiment is conducted to control the music. The system also detects the long placement of hand on each sensor and both sensors. The long placement of hand on left sensor, right sensor, and both sensors make the system to forward the music, rewind the music, and resume/pause the music. Music is controlled with a hand motion successfully except when the hand moves quickly. 
 
-**Experiment 7: Construction of the Device Box**<a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP7.pdf" target="_blank">Experiment 7</a>
+**Experiment 7: Construction of the Device Box** <a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP7.pdf" target="_blank">Experiment 7</a>
 
 The requirements for the box are:
 
@@ -216,6 +200,19 @@ The requirements for the box are:
 
 To meet these requirements, the box consists of two compartments that can be easily disintegrated. The top compartment houses the entire circuit and the sensors are attached to the bottom part of the top panel. This ensures protection from ambient environment. Moreover, the box is made up of wood to prevent thermal and electric conduction.
 
+
+**Design**
+
+![](images/sensor.png) 
+Figure 1. the design of device
+
+**OpenChrip**
+Figure 2 shows the interface of the OpenChirp for our data series.
+
+![](images/openchirp.png) 
+Figure 2. the Openchirp Interface
+
+At first, A voltage jump in left sensor is detected and then a few seconds later it went back to normal while there was another voltage jump in right sensor. This implies there was a hand over the left sensor blocking the light first and in a few seconds it moved to the right one. Therefore, this part is a hand motion of left to right. Similarly, it is applied to the right part.
 
 
 ### 4.Discussion
@@ -231,3 +228,23 @@ For now, the device still has some places can be improved. (1) Firstly, certain 
 
 
 ### 5.Reference
+Berges, M., and Chen, B. (2019). “3. Reading Analog Signals with an ADC”. 12-740 Data Acquisition. <https://inferlab.github.io/12740/tutorials/adc.html>. (Accessed 17 October 2019).
+
+Das A. (2020). “Preview and Introduction. In: Signal Conditioning. Signals and Communication Technology.” Springer. (Accessed 17 October 2019). 
+
+Electronics Tutorials. (2019). “Light Sensors.” Electronics Tutorials. < https://www.electronics-tutorials.ws/io/io_4.html>. (Accessed 17 October 2019).
+ 
+Fraden, J. (2010). “Handbook of Modern Sensors: Physics, Designs, and Applications: Chapter 2 - Sensor Characteristics” Springer. (Accessed 17 October 2019).
+
+Haugan, H. (2008). “Study of residual background carriers in midinfrared InAs/GaSb superlattices for uncooled detector operation.” Applied Physics Letters. < https://www.researchgate.net/publication/252286636_Study_of_residual_background_carriers_in_midinfrared_InAsGaSb_superlattices_for_uncooled_detector_operation
+>. (Accessed 17 October 2019).
+ 
+Kruger, C. (2017). “Smart street lights using power line communication.” IEEE. < https://ieeexplore.ieee.org/abstract/document/8095718>. (Accessed 17 October 2019).
+ 
+MySensors. (2019). “Light Level Sensor – LM393.” MySensors. https://www.mysensors.org/build/light-lm393>. (Accessed 17 October 2019).
+ 
+Nagadevi, S. (2018). “IoT BASED POLYHOUSE MONITORING AND CONTROL SYSTEM.” International Journal of Pure and Applied Mathematics. < https://acadpubl.eu/hub/2018-118-21/articles/21e/64.pdf>. (Accessed 17 October 2019).
+ 
+Stuijk, S. (2019). “Sensors and Actuators: Sensors Physics.” Technische Universiteit Eindhoven University of Technology. < http://www.es.ele.tue.nl/education/SensorsActuators/files/sensors/physics/05-thermoelectric-effect.pdf>.  (Accessed 17 October 2019).
+ 
+Wai Li, P. (1984). “A Ratio-Independent Algorithmic Analog-to-Digital Conversion Technique.” IEEE. < https://www.researchgate.net/profile/Paul_Gray10/publication/2981427_A_Ratio-Independent_Algorithmic_Analog-to-Digital_Conversion_Technique/links/567b0fb908ae1e63f1df8713.pdf>. (Accessed 17 October 2019).
