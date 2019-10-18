@@ -229,7 +229,8 @@ Electronics Tutorials. (2019). “Light Sensors.” Electronics Tutorials. <http
  
 Fraden, J. (2010). “Handbook of Modern Sensors: Physics, Designs, and Applications: Chapter 2 - Sensor Characteristics” Springer. (Accessed 17 October 2019).
 
-Haugan, H. (2008). “Study of residual background carriers in midinfrared InAs/GaSb superlattices for uncooled detector operation.” Applied Physics Letters. <https://www.researchgate.net/publication/252286636_Study_of_residual_background_carriers_in_midinfrared_InAsGaSb_superlattices_for_uncooled_detector_operation>. (Accessed 17 October 2019).
+Haugan, H. (2008). “Study of residual background carriers in midinfrared InAs/GaSb superlattices for uncooled detector operation.” Applied Physics Letters. 
+<a href="https://www.researchgate.net/publication/252286636_Study_of_residual_background_carriers_in_midinfrared_InAsGaSb_superlattices_for_uncooled_detector_operation"> https://www.researchgate.net/publication/252286636_Study_of_residual_background_carriers </a>. (Accessed 17 October 2019).
  
 Kruger, C. (2017). “Smart street lights using power line communication.” IEEE. <https://ieeexplore.ieee.org/abstract/document/8095718>. (Accessed 17 October 2019).
  
