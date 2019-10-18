@@ -4,7 +4,7 @@
 
 **Yuneil Yeo, Yaqi Fan, Yujue Mao, Chirag Sachdeva, Rhea Upadhyay**
 
-[Project Video](https://drive.google.com/open?id=1N207_5tJ0NcITNJCpVEyFiWjEd7EHGfH)
+<iframe src="https://drive.google.com/open?id=1N207_5tJ0NcITNJCpVEyFiWjEd7EHGfH" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 [Project Progress Report](https://c-sachdeva.github.io/12740progress_report/)
 
