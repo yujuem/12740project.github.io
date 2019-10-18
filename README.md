@@ -1,6 +1,8 @@
 
 ---
+layout: post
 title:  "Final Report"
+categories: [Final Report]
 ---
 
 **Group AD**
