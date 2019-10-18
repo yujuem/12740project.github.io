@@ -225,19 +225,18 @@ Berges, M., and Chen, B. (2019). “3. Reading Analog Signals with an ADC”. 12
 
 Das A. (2020). “Preview and Introduction. In: Signal Conditioning. Signals and Communication Technology.” Springer. (Accessed 17 October 2019). 
 
-Electronics Tutorials. (2019). “Light Sensors.” Electronics Tutorials. < https://www.electronics-tutorials.ws/io/io_4.html>. (Accessed 17 October 2019).
+Electronics Tutorials. (2019). “Light Sensors.” Electronics Tutorials. <https://www.electronics-tutorials.ws/io/io_4.html>. (Accessed 17 October 2019).
  
 Fraden, J. (2010). “Handbook of Modern Sensors: Physics, Designs, and Applications: Chapter 2 - Sensor Characteristics” Springer. (Accessed 17 October 2019).
 
-Haugan, H. (2008). “Study of residual background carriers in midinfrared InAs/GaSb superlattices for uncooled detector operation.” Applied Physics Letters. <https://www.researchgate.net/publication/252286636_Study_of_residual_background
-carriers_in_midinfrared_InAsGaSb_superlattices_for_uncooled_detector_operation>. (Accessed 17 October 2019).
+Haugan, H. (2008). “Study of residual background carriers in midinfrared InAs/GaSb superlattices for uncooled detector operation.” Applied Physics Letters. <https://www.researchgate.net/publication/252286636_Study_of_residual_background_carriers_in_midinfrared_InAsGaSb_superlattices_for_uncooled_detector_operation>. (Accessed 17 October 2019).
  
-Kruger, C. (2017). “Smart street lights using power line communication.” IEEE. < https://ieeexplore.ieee.org/abstract/document/8095718>. (Accessed 17 October 2019).
+Kruger, C. (2017). “Smart street lights using power line communication.” IEEE. <https://ieeexplore.ieee.org/abstract/document/8095718>. (Accessed 17 October 2019).
  
 MySensors. (2019). “Light Level Sensor – LM393.” MySensors. <https://www.mysensors.org/build/light-lm393>. (Accessed 17 October 2019).
  
-Nagadevi, S. (2018). “IoT BASED POLYHOUSE MONITORING AND CONTROL SYSTEM.” International Journal of Pure and Applied Mathematics. < https://acadpubl.eu/hub/2018-118-21/articles/21e/64.pdf>. (Accessed 17 October 2019).
+Nagadevi, S. (2018). “IoT BASED POLYHOUSE MONITORING AND CONTROL SYSTEM.” International Journal of Pure and Applied Mathematics. <https://acadpubl.eu/hub/2018-118-21/articles/21e/64.pdf>. (Accessed 17 October 2019).
  
-Stuijk, S. (2019). “Sensors and Actuators: Sensors Physics.” Technische Universiteit Eindhoven University of Technology. < http://www.es.ele.tue.nl/education/SensorsActuators/files/sensors/physics/05-thermoelectric-effect.pdf>.  (Accessed 17 October 2019).
+Stuijk, S. (2019). “Sensors and Actuators: Sensors Physics.” Technische Universiteit Eindhoven University of Technology. <http://www.es.ele.tue.nl/education/SensorsActuators/files/sensors/physics/05-thermoelectric-effect.pdf>.  (Accessed 17 October 2019).
  
-Wai Li, P. (1984). “A Ratio-Independent Algorithmic Analog-to-Digital Conversion Technique.” IEEE. < https://www.researchgate.net/profile/Paul_Gray10/publication/2981427_A_Ratio-Independent_Algorithmic_Analog-to-Digital_Conversion_Technique/links/567b0fb908ae1e63f1df8713.pdf>. (Accessed 17 October 2019).
+Wai Li, P. (1984). “A Ratio-Independent Algorithmic Analog-to-Digital Conversion Technique.” IEEE. <https://www.researchgate.net/profile/Paul_Gray10/publication/2981427_A_Ratio-Independent_Algorithmic_Analog-to-Digital_Conversion_Technique/links/567b0fb908ae1e63f1df8713.pdf>. (Accessed 17 October 2019).
