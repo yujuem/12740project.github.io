@@ -4,7 +4,13 @@
 
 **Yuneil Yeo, Yaqi Fan, Yujue Mao, Chirag Sachdeva, Rhea Upadhyay**
 
-[![Watch the video](https://img.youtube.com/vi/Bn2jMuWJl88/maxresdefault.jpg](https://www.youtube.com/watch?v=Bn2jMuWJl88&feature=youtu.be)
+[![Click to watch video]<img src="https://img.youtube.com/vi/Bn2jMuWJl88/maxresdefault.jpg"  width="40%">](https://www.youtube.com/watch?v=Bn2jMuWJl88&feature=youtu.be)
+
+[Project Progress Report](https://github.com/yujuem/12740project.github.io/blob/master/Project_progress.md)
+
+[Project Experiments]()
+
+[OpenChirp](https://openchirp.io/home/device/5da233d1466cc60c381e0c83)
 
 ## 1 Introduction
 
@@ -40,16 +46,6 @@ Figure 2 shows the interface of the OpenChirp for our data series.
 Figure 2. the Openchirp Interface
 
 At first, A voltage jump in left sensor is detected and then a few seconds later it went back to normal while there was another voltage jump in right sensor. This implies there was a hand over the left sensor blocking the light first and in a few seconds it moved to the right one. Therefore, this part is a hand motion of left to right. Similarly, it is applied to the right part.
-
-
-
-[Project Progress Report](https://github.com/yujuem/12740project.github.io/blob/master/Project_progress.md)
-
-[Project Experiments]()
-
-[Video Link](https://www.youtube.com/watch?v=Bn2jMuWJl88&feature=youtu.be)
-
-[OpenChirp](https://openchirp.io/home/device/5da233d1466cc60c381e0c83)
 
 
 ### 2 Methodology
