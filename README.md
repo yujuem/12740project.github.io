@@ -109,7 +109,7 @@ As shown in Figure 2, the amount of voltage drop across R2 is determined by the 
 
 - Transfer Function:  The relationship between the changes due to the input and the voltage output. For light sensors that this project uses, the transfer function can be defined by the following equation:
 
-![](images/newimg) 
+![](images/newimg.png) 
 
 Figure 3: Transfer Function (Electronics Tutorials 2019).
 
