@@ -15,6 +15,7 @@
 ## 1 Introduction
 
 ### 1.1 Motivation
+
 To control the presentation, professors make the hand available for pressing buttons, touchpad, or remote device. Team AD thought of a touchless interface composed of Raspberry Pi and sensors for hand-free presentation control. The world has been revolving around the touchless interface today and creating hand-motion control for presentations during classes was just a minuscule part of the bigger idea. This study has focused the energies on solving real-time issues. GesPress can potentially be a part of the automated infrastructure systems and can improve the lifestyles of users. Therefore, the device can contribute to the ongoing research on cutting edge technologies.
 
 
@@ -59,36 +60,49 @@ The concept behind the phenomena of interest for the project is to line the brid
 Sensors are devices that can convert non-electrical signals to electrical signals either directly or via a number of steps. The project can be devised using various sensors. The physical principles of the three kinds of sensors that can be used have been described below:
 
 - Thermoelectric- Thermoelectric sensors work on the principle of direct conversion of temperature differences to analog electrical voltage and vice versa in the thermocouple. example: Temperature Sensors
+
 - Piezoelectric- This effect is based on the measurement of changes in pressure, acceleration, strain or force due to vibration by converting them into electrical signals. example: Accelerometers
-- Photosensitive- Light sensors sometimes use a component called a photodiode to measure illuminance. When beams of light strike a photodiode, they have a tendency to knock electrons loose, causing an electric current to flow. The brighter the light, the stronger the electric current. The current can then be measured to return the illuminance of the light ex: Light Sensors
+
+- Photosensitive- Light sensors sometimes use a component called a photodiode to measure illuminance. When beams of light strike a photodiode, they have a tendency to knock electrons loose, causing an electric current to flow. The brighter the light, the stronger the electric current. The current can then be measured to return the illuminance of the light example: Light Sensors
 
 ### 2.1.2 Static and Dynamic Behavior
-**Signal Characteristics: **
+
+**Signal Characteristics:**
 
 - Frequency: For the project, the signal is not oscillating in terms of time. There is no change in output when the hand is not moved. Therefore, the frequency of the signal depends on the number of times the hand movements are detected at certain time.
-- Amplitude/Magnitude: Magnitude is the difference between the initial value and the measurement representing the hand presence. Amplitude is the maximum value of the magnitudes 
+
+- Amplitude/Magnitude: Magnitude is the difference between the initial value and the measurement representing the hand presence. Amplitude is the maximum value of the magnitudes. 
 
 **Sensor Characteristic - Static Behavior:**
 
 - Input: Changes due to the hand movement
-- Transfer Function:  The relationship between the changes due to the input and the voltage output. The relationship can be linear or non-linear depending on the sensors.                      
+
+- Transfer Function: The relationship between the changes due to the input and the voltage output. The relationship can be linear or non-linear depending on the sensors.   
+
 - Span: The range of input values are different for different sensors. It can be a binary range: No Change (0) to Change (1). It can be a dynamic range starting from the value representing the initial state to the value representing a change. 
+
 - Accuracy: The accuracy is depended on the type of sensors used. The accuracy of the sensor is measured in terms of detecting the change in the movement.
+
 - Hysteresis: (Reference 2). If the relationship between the input and the output of the certain sensor is almost linear, the non-linearity error should be minimum.  
+
 - Saturation: The maximum operating range for a sensor should be defined inside a specific space that only the changes in the background are not detected.
+
 - Repeatability: Under similar conditions, the error associated with the repeatability should be low enough so that the sensor should detect the hand movement every time. 
+
 - Resolution: It should be small enough to detect the minute changes in hand movements. 
  
 **Sensor Characteristic - Dynamic Behavior:**
 
-- Frequency Response: It is the measure of the output signal of a control system with respect to the changes due to the movement. The response is used to measure the dynamic response of a system. (Reference 2)                                     
-- Phase Shift: Phase Shift should be low enough to have a stable voltage response.  If the phase shift is too high, it reduces the phase marginal value of the system and can result in unstable system response. (Reference 2) 
-- Resonant frequency: It is the frequency at which the sensor’s output signal increases considerably. The signals which behave linearly, first-order systems do not resonate. (Reference 2). For the project, Resonant frequency differs with respect to the types of sensors.
+- Frequency Response: It is the measure of the output signal of a control system with respect to the changes due to the movement. The response is used to measure the dynamic response of a system. (Reference 2)            
 
+- Phase Shift: Phase Shift should be low enough to have a stable voltage response.  If the phase shift is too high, it reduces the phase marginal value of the system and can result in unstable system response. (Reference 2) 
+
+- Resonant frequency: It is the frequency at which the sensor’s output signal increases considerably. The signals which behave linearly, first-order systems do not resonate. (Reference 2). For the project, Resonant frequency differs with respect to the types of sensors.
 
 ### 2.2 Sensors used
 
 ![](images/image9.png) 
+
 Figure 4: Description of Photosensitive Light Sensor Module
 
 Photosensitive Light Sensor (LM393) works through the light dependent resistor (LDR). LDR is a semiconductor device that changes its electrical resistance depending on the presence of light, its resistance can reach several thousand Ohms in the dark, while only a few hundreds of Ohms in the light. According to Figure 4, when ambient light intensity does not reach the threshold value, the module DO port output high; when the ambient light intensity exceeds a set threshold, the D0 output low; digital outputs D0 can be directly connected with the microcontroller through the microcontroller to detect high and low, thereby detecting the light intensity changes in the environment. 
@@ -101,35 +115,47 @@ The specification of Photosensitive Light Sensor (LM393) is extracted as below,
 
 - Sensitivity: Adjustable for visible light
 
-
-
 Connecting LDR in series with a standard resistor could generate a voltage drop based on light intensity, and the circuit is called voltage divider network. Figure 3 shows the voltage divider network. 
-
-
-
-![](images/image7.png) 
-Figure 2: The variation of resistance of LDR.
 
 ![](images/image10.png) 
 Figure 3: Voltage Divider Network 
+
+As shown in Figure 2, the amount of voltage drop across R2 is determined by the resistance of LDR. The voltage present at the junction is determined by the formula shown in Figure 2.
+
+**Sensor characteristics:**
+
+- Input: As the hand movement is detected by light sensors, the input value(i.e. light intensity) changes. The frequency of input signal changes as compared to the original light source. 
+
+- Transfer Function:  The relationship between the changes due to the input and the voltage output. For light sensors that this project uses, the transfer function can be defined by the following equation:
+
+- Span: The range of input values for light sensors is dynamic starting from the value representing the initial state to the value representing the change in light intensity. Since LDR is used on LM393, the range of light levels selected for LDR is researched. For ADC, the selected range of light levels is 200 LUX to 30 LUX.
+
+- Accuracy: The accuracy is depended on the type of sensors. The accuracy was measured by an experiment. Out of 20 times, a hand movement was performed in the span of the sensor, 16 times it was detected correctly. The percentage accuracy is ~80%.
+
+- Resolution: The resolution of LM393 or LDR is ± 35 lux. 
 
 ### 2.3 Signal Conditioning and Processing
 
 Signal Processing is the process of acquiring data with enhanced accuracy, it is performed with the help signal conditioner. This conditioner helps to provide the user with accurate and precise measurements and enhanced machine control. For this project, we have used A/D converter as a signal conditioner. The signal conditioner has been designed to perform several functions listed below:
  
 - Signal Conversion: The main function of signal conditioners is to convert the raw signal from sensors to high-level electrical signals. If several sensors are being used in a device, the conditioners need to be connected to each other as well
+
 - Linearisation: If the output-stimulus relation for a sensor signal is not linear, conditioners can perform functions to convert the outputs in a linear range of values. This will provide a smooth curve for output signals and increase accuracy
+
 - Amplifying: Two methods can be employed to amplify the signals, increasing the measured input values of signals or by increasing the signal to noise ratio. Different types of instrumentation sensors and isolation sensors can be used with high impedance characteristics to amplify the measured output values
+
 - Filtering: The final signal output values can be filtered to only include a spectrum of frequencies for analysis. Conditioners can be made from active or passive components or digital algorithms. The passive filters use capacitors or resistors with the maximum signal gain. The active filters are operational amplifiers or transistors. The advanced signal conditioners use digital filters without any requirement of hardware.
                
 This project makes use of an Analog to Digital Converter(MCP3008) for signal processing and conditioning with 8 channels and 10 Bits precision. The below figure shows the numbering of the pins on MCP3008 looks. 
 
 ![](images/image8.png) 
+
 Figure 5: MCP3008(Berges and Chen 2019).
 
 The working of ADC has been explained below:
 
 ![](images/image11.png) 
+
 Figure 6: ADC Block Diagram
 
 The block diagram describes the broad working of an ADC. It performs two functions, sampling and holding, quantization and processing of the digital output. The quantization process can either be performed by analog integration, digital counter, and successive approximation or direct conversion in Flash types. Further, the digital output data is served to the CPU or gets directly stored in memory. In the output of S/H, certain voltage is present. A numerical value is assigned to the voltage in correspondence with its amplitude. It is in the limited range of possible values given by the power of 2 i.e 2^n (28 = 256, 210=1024 etc). Once the closest value is assigned it is encoded in the form of binary numbers generated by the quantizer, that are represented by ‘n’ bits. Post this the digital signal is again converted to an analog output for the user to interpret the frequency response and record sensor measurements. The choice of integrating the ADC with MCU chip or another stand-alone Integrated chip is subject to change as the interface demands.        
@@ -138,7 +164,9 @@ The block diagram describes the broad working of an ADC. It performs two functio
 
 To process the hand motion signals,  a short series list of data samples, which can refresh itself continuously after its store is full or for some certain demand, is created. The length of the series is defined as the operation time range for single hand motion.  
 In this way, the sequence of hand presence information can be recorded on the list and processed.
+
 The first voltage analog output representing the light intensity value of the environment is stored as an initial value with an assumption that hand is not blocking the light. Then, the difference between the initial value and the measurement is calculated.
+
 After the difference is measured, the filtration of the data proceeds. It is possible that the brightness of the surrounding environment can be changed due to external factors. The small changes in the brightness of the surrounding environment due to the external factors are considered as the noise. Therefore, the code checks the difference between the initial value and the measurement. If the value of the difference is less than the certain arbitrary number, the code determines that the difference is due to the external factor, eliminate the value, and append zero to the list. If the difference is bigger than the certain arbitrary number, the difference is appended to the list. 
 The overall list can give the information of the time length and specific time of hand covering the light sensor. With two light sensors settling separately on the left and right side, there are two lists of data providing information about the sequence of hand covering two sensors. Therefore, a simple instruction based on the hand motion can be executed by this interpreting process. Similarly, there will be more information input with more sensors, and thus more complex motions and executions.
 
@@ -193,5 +221,7 @@ In this project, Team AD implemented the hand movement control of slides and mus
 **What can we do in the future?**
 
 For now, the device still has some places can be improved. (1) Firstly, certain intervals are required for each movement. The sensor needs a certain period of time to initialize once it fails to detect a movement or just finish the previous detection, which sometimes results in a lack of smooth operation. (2) Secondly, the device only contains two light sensors, so we can’t enable more complex movement control. With two sensors, we could detect five types of movement at most (left-to-right, right-to-left, left-dark, right-dark, both dark). If more sensors are included in the device, we is able to explore more complex movements. However, the extraction and combination of signals will also become more difficult.
+
+
 
 ### 5.Reference
