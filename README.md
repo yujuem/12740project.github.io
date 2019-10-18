@@ -41,13 +41,12 @@ The concept behind the phenomena of interest for the project is to line the brid
 
 ### 2.1.1 Physical Principle
 
-Sensors are devices that can convert non-electrical signals to electrical signals either directly or via a number of steps. The project can be devised using various sensors. The physical principles of the three kinds of sensors that can be used have been described below:
+Sensors are devices that can convert non-electrical signals to electrical signals either directly or via a number of steps (Fraden 2010). The project can be devised using various sensors. The physical principles of the three kinds of sensors that can be used have been described below:
 
-- Thermoelectric- Thermoelectric sensors work on the principle of direct conversion of temperature differences to analog electrical voltage and vice versa in the thermocouple. example: Temperature Sensors
+- Thermoelectric- Thermoelectric sensors work on the principle of direct conversion of temperature differences to analog electrical voltage and vice versa in the thermocouple. example: Temperature Sensors (Stuijk 2019).
+- Piezoelectric- This effect is based on the measurement of changes in pressure, acceleration , strain or force due to vibration by converting them into electrical signals. example: Accelerometers (Zheng et al 2019).
+- Photosensitive- Light sensors sometimes use a component called a photodiode to measure illuminance. When beams of light strike a photodiode, they have a tendency to knock electrons loose, causing an electric current to flow. The brighter the light, the stronger the electric current. The current can then be measured to return the illuminance of the light ex: Light Sensors (Wai Li 1984).
 
-- Piezoelectric- This effect is based on the measurement of changes in pressure, acceleration, strain or force due to vibration by converting them into electrical signals. example: Accelerometers
-
-- Photosensitive- Light sensors sometimes use a component called a photodiode to measure illuminance. When beams of light strike a photodiode, they have a tendency to knock electrons loose, causing an electric current to flow. The brighter the light, the stronger the electric current. The current can then be measured to return the illuminance of the light example: Light Sensors
 
 ### 2.1.2 Static and Dynamic Behavior
 
@@ -67,7 +66,7 @@ Sensors are devices that can convert non-electrical signals to electrical signal
 
 - Accuracy: The accuracy is depended on the type of sensors used. The accuracy of the sensor is measured in terms of detecting the change in the movement.
 
-- Hysteresis: (Reference 2). If the relationship between the input and the output of the certain sensor is almost linear, the non-linearity error should be minimum.  
+- Hysteresis: If the relationship between the input and the output of the certain sensor is almost linear, the non-linearity error should be minimum (Fraden 2010).
 
 - Saturation: The maximum operating range for a sensor should be defined inside a specific space that only the changes in the background are not detected.
 
@@ -77,33 +76,30 @@ Sensors are devices that can convert non-electrical signals to electrical signal
  
 **Sensor Characteristic - Dynamic Behavior:**
 
-- Frequency Response: It is the measure of the output signal of a control system with respect to the changes due to the movement. The response is used to measure the dynamic response of a system. (Reference 2)            
+- Frequency Response: It is the measure of output signal of a control system with respect to the changes due to the movement. The response is used to measure the dynamic response of a system. (Fraden 2010)                                
+- Phase Shift : Phase Shift should be low enough to have a stable voltage response.  If the phase shift is too high, it reduces the phase marginal value of system and can result in unstable system response. (Fraden 2010)  
+- Resonant frequency: It is the frequency at which sensors output signal increases considerably. The signals which behave linearly, first order systems do not resonate. (Fraden 2010). For the project, Resonant frequency differs with respect to the types of sensors.
 
-- Phase Shift: Phase Shift should be low enough to have a stable voltage response.  If the phase shift is too high, it reduces the phase marginal value of the system and can result in unstable system response. (Reference 2) 
-
-- Resonant frequency: It is the frequency at which the sensor’s output signal increases considerably. The signals which behave linearly, first-order systems do not resonate. (Reference 2). For the project, Resonant frequency differs with respect to the types of sensors.
 
 ### 2.2 Sensors used
 
 ![](images/image9.png) 
 
-Figure 1: Description of Photosensitive Light Sensor Module
+Figure 1: Description of Photosensitive Light Sensor Module (MySensor 2019).
 
-Photosensitive Light Sensor (LM393) works through the light dependent resistor (LDR). LDR is a semiconductor device that changes its electrical resistance depending on the presence of light, its resistance can reach several thousand Ohms in the dark, while only a few hundreds of Ohms in the light. According to Figure 1, when ambient light intensity does not reach the threshold value, the module DO port output high; when the ambient light intensity exceeds a set threshold, the D0 output low; digital outputs D0 can be directly connected with the microcontroller through the microcontroller to detect high and low, thereby detecting the light intensity changes in the environment. 
+Photosensitive Light Sensor (LM393) works through the light dependent resistor (LDR). LDR is a semiconductor device that changes its electrical resistance depending on the presence of light, its resistance can reach several thousand Ohms in the dark, while only a few hundreds of Ohms in the light (MySensor 2019). According to Figure 1, when ambient light intensity does not reach the threshold value, the module DO port output high; when the ambient light intensity exceeds a set threshold, the D0 output low; digital outputs D0 can be directly connected with the microcontroller through the microcontroller to detect high and low, thereby detecting the light intensity changes in the environment. 
 
 The specification of Photosensitive Light Sensor (LM393) is extracted as below,
 
-- Input Voltage: 3.3~5V
-
-- Output: Analog Voltage Form or Digital Switching Form
-
-- Sensitivity: Adjustable for visible light
+- Input Voltage: 3~5V  (MySensor 2019).
+- Output: Analog Voltage Form or Digital Switching Form  (MySensor 2019).
+- Sensitivity: Adjustable for visible light  (MySensor 2019).
 
 Connecting LDR in series with a standard resistor could generate a voltage drop based on light intensity, and the circuit is called voltage divider network. Figure 3 shows the voltage divider network. 
 
 ![](images/image10.png) 
 
-Figure 2: Voltage Divider Network 
+Figure 2: Voltage Divider Network (Electronics Tutorials 2019). 
 
 As shown in Figure 2, the amount of voltage drop across R2 is determined by the resistance of LDR. The voltage present at the junction is determined by the formula shown in Figure 2.
 
@@ -115,14 +111,14 @@ As shown in Figure 2, the amount of voltage drop across R2 is determined by the 
 
 ![](images/bbb) 
 
-Figure 3: Voltage Divider Network 
+Figure 3: Transfer Function
 
 
-- Span: The range of input values for light sensors is dynamic starting from the value representing the initial state to the value representing the change in light intensity. Since LDR is used on LM393, the range of light levels selected for LDR is researched. For ADC, the selected range of light levels is 200 LUX to 30 LUX.
+- Span: The range of input values for light sensors is dynamic starting from the value representing the initial state to the value representing the change in light intensity. Since LDR is used on LM393, the range of light levels selected for LDR is researched. For ADC, the selected range of light levels is 200 LUX to 30 LUX (Kruger 2017). 
 
 - Accuracy: The accuracy is depended on the type of sensors. The accuracy was measured by an experiment. Out of 20 times, a hand movement was performed in the span of the sensor, 16 times it was detected correctly. The percentage accuracy is ~80%.
 
-- Resolution: The resolution of LM393 or LDR is ± 35 lux. 
+- Resolution: The resolution of LM393 or LDR is ± 35 lux (Kruger 2017). 
 
 ### 2.3 Signal Conditioning and Processing
 
@@ -140,7 +136,7 @@ This project makes use of an Analog to Digital Converter(MCP3008) for signal pro
 
 ![](images/image8.png) 
 
-Figure 4: MCP3008(Berges and Chen 2019).
+Figure 4: MCP3008 (Berges and Chen 2019).
 
 The working of ADC has been explained below:
 
@@ -191,11 +187,8 @@ Experiment is conducted to control the music. The system also detects the long p
 The requirements for the box are:
 
   - It should be compact. It should be easy to disintegrate and assemble back
-  
   - Provide structural support to the circuit 
-  
   - Non conducting and thermally insulating 
-  
   - Have opening for the sensor
 
 To meet these requirements, the box consists of two compartments that can be easily disintegrated. The top compartment houses the entire circuit and the sensors are attached to the bottom part of the top panel. This ensures protection from ambient environment. Moreover, the box is made up of wood to prevent thermal and electric conduction.
