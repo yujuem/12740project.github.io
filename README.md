@@ -4,9 +4,9 @@
 
 **Yuneil Yeo, Yaqi Fan, Yujue Mao, Chirag Sachdeva, Rhea Upadhyay**
 
-[![Click to watch video]<img src="https://img.youtube.com/vi/Bn2jMuWJl88/maxresdefault.jpg"  width="40%">](https://www.youtube.com/watch?v=Bn2jMuWJl88&feature=youtu.be)
+[Project Video](https://www.youtube.com/watch?v=Bn2jMuWJl88&feature=youtu.be)
 
-[Project Progress Report](https://github.com/yujuem/12740project.github.io/blob/master/Project_progress.md)
+[Project Progress Report](https://c-sachdeva.github.io/12740progress_report/)
 
 [Project Experiments]()
 
