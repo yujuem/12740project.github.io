@@ -1,4 +1,4 @@
-**Final Report: Hand Based Control**
+# Final Report: Hand Based Control
 
 **Group AD**
 
@@ -33,7 +33,7 @@ To control the presentation, professors make the hand available for pressing but
 
 
 
-### 2 Methodology
+## 2 Methodology
 
 ### 2.1 Phenomena of Interest
 
@@ -155,7 +155,7 @@ The first voltage analog output representing the light intensity value of the en
 After the difference is measured, the filtration of the data proceeds. It is possible that the brightness of the surrounding environment can be changed due to external factors. The small changes in the brightness of the surrounding environment due to the external factors are considered as the noise. Therefore, the code checks the difference between the initial value and the measurement. If the value of the difference is less than the certain arbitrary number, the code determines that the difference is due to the external factor, eliminate the value, and append zero to the list. If the difference is bigger than the certain arbitrary number, the difference is appended to the list. 
 The overall list can give the information of the time length and specific time of hand covering the light sensor. With two light sensors settling separately on the left and right side, there are two lists of data providing information about the sequence of hand covering two sensors. Therefore, a simple instruction based on the hand motion can be executed by this interpreting process. Similarly, there will be more information input with more sensors, and thus more complex motions and executions.
 
-### 3.Experiments and Results
+## 3.Experiments and Results
 
 **Experiment 1: Experiments with One Sensor** <a href="https://github.com/yujuem/12740project.github.io/blob/master/EXP1.pdf" target="_blank">Experiment 1</a>
 
@@ -193,12 +193,12 @@ The requirements for the box are:
 To meet these requirements, the box consists of two compartments that can be easily disintegrated. The top compartment houses the entire circuit and the sensors are attached to the bottom part of the top panel. This ensures protection from the ambient environment. Moreover, the box is made up of wood to prevent thermal and electric conduction.
 
 
-**Design**
+### 3.1.Design
 
 ![](images/sensor.png) 
 Figure 6. the design of the device
 
-**OpenChrip**
+### 3.2.OpenChrip
 
 Figure 7 shows the interface of the OpenChirp for our data series.
 
@@ -208,19 +208,19 @@ Figure 7. the Openchirp Interface
 At first, A voltage jump in the left sensor is detected and then a few seconds later it went back to normal while there was another voltage jump in the right sensor. This implies there was a hand over the left sensor blocking the light first and in a few seconds, it moved to the right one. Therefore, this part is a hand motion of left to right. Similarly, it is applied to the right part.
 
 
-### 4.Discussion
+## 4.Discussion
 
-**Lessons Learned**
+### 4.1.Lessons Learned
 
 In this project, Team AD implemented the hand movement control of slides and music player by using light sensors, A/D converter, and Raspberry Pi. Team AD also uploaded our real-time data to the OpenChrip to create the IoT device. With the completion of the project, Team AD get a deeper understanding of (1) the principles of various sensors, (2) the circuits analysis, (3) Linux commands and Python programming, (4) A/D conversions and signal processing.
 
-**Future Application**
+### 4.2.Future Application
 
 For now, the device still has some places can be improved. (1) Firstly, certain intervals are required for each movement. The sensor needs a certain time to initialize once it fails to detect a movement or just finish the previous detection, which sometimes results in a lack of smooth operation. (2) Secondly, the device only contains two light sensors, so it can’t enable more complex motion control. With two sensors, it could detect five types of movement at most (left-to-right, right-to-left, left-dark, right-dark, both dark). If more sensors are included in the device, it can explore more complex movements. However, the extraction and combination of signals will also become more difficult.
 
 
 
-### 5.Reference
+## 5.Reference
 Berges, M., and Chen, B. (2019). “3. Reading Analog Signals with an ADC”. 12-740 Data Acquisition. <https://inferlab.github.io/12740/tutorials/adc.html>. (Accessed 17 October 2019).
 
 Das A. (2020). “Preview and Introduction. In: Signal Conditioning. Signals and Communication Technology.” Springer. (Accessed 17 October 2019). 
