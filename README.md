@@ -109,10 +109,11 @@ As shown in Figure 2, the amount of voltage drop across R2 is determined by the 
 
 - Transfer Function:  The relationship between the changes due to the input and the voltage output. For light sensors that this project uses, the transfer function can be defined by the following equation:
 
-![](images/bbb) 
+![](images/newimg) 
 
-Figure 3: Transfer Function
+Figure 3: Transfer Function (Electronics Tutorials 2019).
 
+Graph on Figure 3 shows that the resistance of LDR increases when illumination (LUX) value is low.  The increase in LUX value decreases the resistance of LDR. (Nagadevi 2018).
 
 - Span: The range of input values for light sensors is dynamic starting from the value representing the initial state to the value representing the change in light intensity. Since LDR is used on LM393, the range of light levels selected for LDR is researched. For ADC, the selected range of light levels is 200 LUX to 30 LUX (Kruger 2017). 
 
