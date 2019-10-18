@@ -49,7 +49,18 @@ At first, A voltage jump in left sensor is detected and then a few seconds later
 
 
 ### 2 Methodology
-### 2.1 
+
+### 2.1 Phenomena of Interest
+
+The concept behind the phenomena of interest for the project is to line the bridge between sensor measurement data and humane-characteristics on the basis of spatiotemporal proximity. The use of sensors in the project aids in using real-time data to manipulate analog outputs and channelize that into understanding user’s demands and following people-centric commands.
+
+### 2.2 Physical Principle
+
+Sensors are devices that can convert non-electrical signals to electrical signals either directly or via a number of steps. The project can be devised using various sensors. The physical principles of the three kinds of sensors that can be used have been described below:
+Thermoelectric- Thermoelectric sensors work on the principle of direct conversion of temperature differences to analog electrical voltage and vice versa in the thermocouple. example: Temperature Sensors
+Piezoelectric- This effect is based on the measurement of changes in pressure, acceleration, strain or force due to vibration by converting them into electrical signals. example: Accelerometers
+Photosensitive- Light sensors sometimes use a component called a photodiode to measure illuminance. When beams of light strike a photodiode, they have a tendency to knock electrons loose, causing an electric current to flow. The brighter the light, the stronger the electric current. The current can then be measured to return the illuminance of the light ex: Light Sensors
+
 ### 2.2 Sensor used
 
 Photosensitive Light Sensor (LM393) works through the light dependent resistor (LDR). LDR is a semiconductor device that changes its electrical resistance depending on the presence of light, its resistance can reach several thousand Ohms in the dark, while only few hundreds of Ohms in the light. Below figure shows the variation of the resistance of LDR. 
