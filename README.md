@@ -1,8 +1,6 @@
-
+Final Report
 ---
-layout: post
-title:  "Final Report"
-categories: [Final Report]
+#Final Report: Hand Based Control
 ---
 
 **Group AD**
